@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Mail, Search, LoaderCircle, Link as LinkIcon, DollarSign, CalendarClock } from 'lucide-react';
+import { Mail, Search, LoaderCircle, Link as LinkIcon, CalendarClock } from 'lucide-react';
 
-const GMAIL_QUERY = 'newer_than:365d ("paid study" OR "paid research" OR stipend OR compensation OR "gift card" OR "research opportunity" OR "participant needed")';
+const GMAIL_QUERY = 'newer_than:365d (research OR study OR participant OR experiment) (paid OR compensation OR stipend OR "gift card" OR incentive OR honorarium)';
 const MAX_MESSAGES = 40;
 const DETAIL_BATCH_SIZE = 5;
 const BATCH_PAUSE_MS = 200;
@@ -9,8 +9,14 @@ const MAX_RETRIES = 4;
 const GOOGLE_SCRIPT_ID = 'google-identity-services';
 
 const RESEARCH_KEYWORDS = ['research', 'study', 'participant', 'experiment', 'survey', 'lab', 'recruiting', 'trial'];
+const STRONG_RESEARCH_KEYWORDS = ['research study', 'research participation', 'participant recruitment', 'human subjects', 'irb', 'principal investigator'];
 const PAID_KEYWORDS = ['paid', 'compensation', 'stipend', 'gift card', 'earn', 'venmo', 'cash', 'incentive', 'paid research', 'paid study'];
 const SIGNUP_HINTS = ['signup', 'sign up', 'register', 'qualtrics', 'google forms', 'forms.gle', 'apply', 'schedule'];
+const NON_RESEARCH_KEYWORDS = [
+  'flight', 'itinerary', 'boarding', 'reservation', 'gate', 'terminal', 'departure', 'arrival',
+  'project team', 'standup', 'sprint', 'scrum', 'team meeting', 'calendar invite', 'outlook calendar',
+  'ticket confirmation', 'hotel booking'
+];
 
 const GmailResearchScanner = ({ onMarkSignedUp }) => {
   const clientId = useMemo(() => import.meta.env.VITE_GOOGLE_CLIENT_ID || '', []);
@@ -265,8 +271,7 @@ const GmailResearchScanner = ({ onMarkSignedUp }) => {
                     <p className="text-sm text-gray-500 mt-0.5">{study.lab}</p>
                   </div>
                   <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                    <DollarSign className="w-3 h-3" />
-                    {study.compensation}
+                    {displayCompensation(study.compensation)}
                   </span>
                 </div>
 
@@ -295,7 +300,7 @@ const GmailResearchScanner = ({ onMarkSignedUp }) => {
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#00274C] text-white text-xs font-medium hover:bg-[#001a36]"
                   >
                     <LinkIcon className="w-3.5 h-3.5" />
-                    Open Signup
+                    {study.hasDirectSignupLink ? 'Open Signup' : 'Open in Gmail'}
                   </button>
                 </div>
               </article>
@@ -354,6 +359,14 @@ function formatCurrency(amount) {
   }).format(Number(amount) || 0);
 }
 
+function displayCompensation(compensationText) {
+  const cleaned = String(compensationText || '').replace(/\$/g, '').trim();
+  if (!cleaned || /not listed/i.test(cleaned)) {
+    return 'Compensation not listed';
+  }
+  return `$${cleaned}`;
+}
+
 async function gmailGet(url, token) {
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt += 1) {
     const res = await fetch(url, {
@@ -399,16 +412,31 @@ function parseMessageToStudy(email, id) {
   const subject = headerValue(headers, 'Subject') || 'Research opportunity';
   const from = headerValue(headers, 'From') || 'Unknown sender';
   const bodyText = extractBodyText(email.payload);
+  const pdfAttachments = extractPdfAttachments(email.payload);
+  const hasPdfAttachment = pdfAttachments.length > 0;
   const combined = `${subject}\n${email.snippet || ''}\n${bodyText}`;
   const lower = combined.toLowerCase();
 
-  const hasResearch = containsAny(lower, RESEARCH_KEYWORDS);
+  const strongResearchSignal = containsAny(lower, STRONG_RESEARCH_KEYWORDS);
+  const researchSignalCount = countMatches(lower, RESEARCH_KEYWORDS);
   const hasPaidTerms = containsAny(lower, PAID_KEYWORDS);
+  const looksNonResearch = containsAny(lower, NON_RESEARCH_KEYWORDS);
   const compensationInfo = extractCompensation(combined);
   const links = extractLinks(combined);
-  const signupUrl = links.find((url) => hasSignupHint(url.toLowerCase())) || links[0] || '';
+  const signupUrl = links.find((url) => hasSignupHint(url.toLowerCase())) || '';
+  const hasSignup = Boolean(signupUrl);
+  const hasPaidSignal = hasPaidTerms || Boolean(compensationInfo.label);
+  const actionUrl = signupUrl || (hasPdfAttachment ? buildGmailMessageUrl(email.id) : '');
 
-  if (!hasResearch || (!hasPaidTerms && !compensationInfo.label && !signupUrl)) {
+  if (looksNonResearch) {
+    return null;
+  }
+
+  if (!strongResearchSignal && researchSignalCount < 2) {
+    return null;
+  }
+
+  if (!hasPaidSignal || (!hasSignup && !hasPdfAttachment)) {
     return null;
   }
 
@@ -427,8 +455,10 @@ function parseMessageToStudy(email, id) {
     format,
     deadline,
     description: (email.snippet || bodyText || 'Open email for full details.').trim().slice(0, 220),
-    signupUrl,
-    tags,
+    signupUrl: actionUrl,
+    hasDirectSignupLink: hasSignup,
+    hasPdfAttachment,
+    tags: hasPdfAttachment && !tags.includes('pdf') ? [...tags, 'pdf'] : tags,
     closingSoon: deadlineIsSoon(deadline)
   };
 }
@@ -464,6 +494,10 @@ function containsAny(text, words) {
   return words.some((word) => text.includes(word));
 }
 
+function countMatches(text, words) {
+  return words.reduce((count, word) => count + (text.includes(word) ? 1 : 0), 0);
+}
+
 function extractCompensation(text) {
   const moneyMatches = text.match(/\$\s?\d+(?:\.\d{1,2})?/g) || [];
   const values = moneyMatches
@@ -484,6 +518,31 @@ function extractCompensation(text) {
 function extractLinks(text) {
   const matches = text.match(/https?:\/\/[^\s"'<>]+/g) || [];
   return [...new Set(matches.map((url) => url.replace(/[),.]$/, '')))].slice(0, 10);
+}
+
+function extractPdfAttachments(payload) {
+  if (!payload) return [];
+
+  const attachments = [];
+  const filename = (payload.filename || '').toLowerCase();
+  const isPdfByName = filename.endsWith('.pdf');
+  const isPdfByMime = (payload.mimeType || '').toLowerCase() === 'application/pdf';
+
+  if (isPdfByName || isPdfByMime) {
+    attachments.push(payload.filename || 'attachment.pdf');
+  }
+
+  if (payload.parts && payload.parts.length) {
+    payload.parts.forEach((part) => {
+      attachments.push(...extractPdfAttachments(part));
+    });
+  }
+
+  return attachments;
+}
+
+function buildGmailMessageUrl(messageId) {
+  return `https://mail.google.com/mail/u/0/#inbox/${messageId}`;
 }
 
 function hasSignupHint(urlText) {
