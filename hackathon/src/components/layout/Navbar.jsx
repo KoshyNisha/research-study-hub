@@ -6,14 +6,12 @@ import { getStoredProfile } from '../../data/student';
 const Navbar = () => {
   const location = useLocation();
   const storedProfile = getStoredProfile();
-  const isSignedIn = !!storedProfile;
   const accountLabel = storedProfile?.name || 'Profile';
 
   const navItems = [
     { path: '/', label: 'Home', icon: null },
     { path: '/discover', label: 'Discover', icon: Search },
     { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    ...(!isSignedIn ? [{ path: '/signup', label: 'Sign Up', icon: User }] : []),
     { path: '/profile', label: accountLabel, icon: User }
   ];
 

@@ -1,8 +1,9 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Card, { CardContent, CardFooter, CardHeader } from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
+import { getStoredProfile } from '../data/student';
 
 const departmentOptions = [
   {
@@ -38,6 +39,17 @@ const Signup = () => {
   const [major, setMajor] = useState('');
   const [selected, setSelected] = useState({});
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const storedProfile = getStoredProfile();
+    if (!storedProfile) return;
+
+    setName(storedProfile.name || '');
+    setEmail(storedProfile.email || '');
+    setYear(storedProfile.year || '');
+    setMajor(storedProfile.major || '');
+    setSelected(storedProfile.interestsByDepartment || {});
+  }, []);
 
   const handleToggle = (department, interest) => {
     setSelected((prev) => {

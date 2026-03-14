@@ -24,7 +24,7 @@ const Profile = () => {
               Review the details we will use to personalize research opportunities.
             </p>
           </div>
-          <Button variant="outline" onClick={() => navigate('/signup')}>
+          <Button variant="outline" onClick={() => navigate('/signup', { state: { fromProfile: true } })}>
             Edit profile
           </Button>
         </div>
