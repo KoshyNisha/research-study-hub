@@ -1,3 +1,5 @@
+export const PROFILE_STORAGE_KEY = "labbridge.profile";
+
 export const student = {
   id: "stu_001",
   name: "Jane Doe",
@@ -32,6 +34,35 @@ export const student = {
   resumeUrl: "/resume.pdf",
   linkedIn: "linkedin.com/in/janedoe",
   profileComplete: 85
+};
+
+export const getStoredProfile = () => {
+  if (typeof window === "undefined") return null;
+  const raw = window.localStorage.getItem(PROFILE_STORAGE_KEY);
+  if (!raw) return null;
+
+  try {
+    return JSON.parse(raw);
+  } catch (error) {
+    return null;
+  }
+};
+
+export const getStudentProfile = () => {
+  const stored = getStoredProfile();
+  if (!stored) {
+    return {
+      ...student,
+      interestsByDepartment: {}
+    };
+  }
+
+  return {
+    ...student,
+    ...stored,
+    interests: stored.interests || student.interests,
+    interestsByDepartment: stored.interestsByDepartment || {}
+  };
 };
 
 export default student;

@@ -30,6 +30,38 @@ age: "18-30",
 eligibility: "Students interested in AR/VR",
 description: "Test an augmented reality learning environment designed for engineering education.",
 apply: "https://example.com"
+},
+{
+title: "VR Usability Study",
+reward: "$5000 Amazon Gift Card",
+duration: "23 minutes",
+location: "BBB 1456",
+age: "21+",
+eligibility: "EECS Students who wear glasses",
+description: "Participate in a study exploring how students interact with VR technology.",
+apply: "https://example.com"
+},
+
+{
+title: "Mobile App Usability Study",
+reward: "$20 Cash",
+duration: "45 minutes",
+location: "North Campus Lab",
+age: "18+",
+eligibility: "Any U-M student",
+description: "Help researchers evaluate the usability of a new mobile learning platform.",
+apply: "https://example.com"
+},
+
+{
+title: "Brain Stimulation and Programming",
+reward: "$60",
+duration: "3-4 hours",
+location: "EECS Building",
+age: "18-30",
+eligibility: "Students interested in AR/VR",
+description: "Test an augmented reality learning environment designed for engineering education.",
+apply: "https://umich.qualtrics.com/jfe/form/SV_2fAhmB9vv6zuZ3E"
 }
 ]
 

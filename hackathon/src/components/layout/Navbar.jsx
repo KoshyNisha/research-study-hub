@@ -1,14 +1,20 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FlaskConical, Search, LayoutDashboard, User } from 'lucide-react';
+import { getStoredProfile } from '../../data/student';
 
 const Navbar = () => {
   const location = useLocation();
+  const storedProfile = getStoredProfile();
+  const isSignedIn = !!storedProfile;
+  const accountLabel = storedProfile?.name || 'Profile';
 
   const navItems = [
     { path: '/', label: 'Home', icon: null },
     { path: '/discover', label: 'Discover', icon: Search },
-    { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard }
+    { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+    ...(!isSignedIn ? [{ path: '/signup', label: 'Sign Up', icon: User }] : []),
+    { path: '/profile', label: accountLabel, icon: User }
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -48,15 +54,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* User */}
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-full">
-              <div className="w-7 h-7 bg-[#00274C] rounded-full flex items-center justify-center">
-                <User className="w-4 h-4 text-white" />
-              </div>
-              <span className="text-sm font-medium text-gray-700">Jane Doe</span>
-            </div>
-          </div>
+          <div />
         </div>
       </div>
     </nav>

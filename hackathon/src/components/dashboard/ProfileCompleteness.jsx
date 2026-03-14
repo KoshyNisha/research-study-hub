@@ -1,9 +1,10 @@
 import React from 'react';
 import { User, CheckCircle2, AlertCircle } from 'lucide-react';
 import Button from '../ui/Button';
-import { student } from '../../data/student';
+import { getStudentProfile } from '../../data/student';
 
 const ProfileCompleteness = () => {
+  const student = getStudentProfile();
   const completionItems = [
     { label: 'Basic Info', complete: true },
     { label: 'Academic Details', complete: true },

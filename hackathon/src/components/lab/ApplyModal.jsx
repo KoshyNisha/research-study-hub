@@ -3,19 +3,20 @@ import { Send, User, Mail, BookOpen, Award, Clock, FileText } from 'lucide-react
 import Modal from '../ui/Modal';
 import Button from '../ui/Button';
 import Badge from '../ui/Badge';
-import { student } from '../../data/student';
+import { getStudentProfile } from '../../data/student';
 
 const ApplyModal = ({ isOpen, onClose, lab }) => {
   const [emailBody, setEmailBody] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const currentStudent = getStudentProfile();
 
   useEffect(() => {
     if (isOpen && lab) {
       // Generate personalized email using student data
-      const generatedEmail = generateEmail(student, lab);
+      const generatedEmail = generateEmail(currentStudent, lab);
       setEmailBody(generatedEmail);
     }
-  }, [isOpen, lab]);
+  }, [isOpen, lab, currentStudent]);
 
   const generateEmail = (student, lab) => {
     const relevantCoursework = student.coursework.filter(course =>
@@ -79,23 +80,23 @@ ${student.linkedIn}`;
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div className="flex items-center gap-2">
               <User className="w-4 h-4 text-gray-400" />
-              <span className="text-gray-600">{student.name}</span>
+              <span className="text-gray-600">{currentStudent.name}</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-gray-400" />
-              <span className="text-gray-600">{student.email}</span>
+              <span className="text-gray-600">{currentStudent.email}</span>
             </div>
             <div className="flex items-center gap-2">
               <BookOpen className="w-4 h-4 text-gray-400" />
-              <span className="text-gray-600">{student.major}, {student.year}</span>
+              <span className="text-gray-600">{currentStudent.major}, {currentStudent.year}</span>
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-4 h-4 text-gray-400" />
-              <span className="text-gray-600">GPA: {student.gpa}</span>
+              <span className="text-gray-600">GPA: {currentStudent.gpa}</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-gray-400" />
-              <span className="text-gray-600">{student.availability}</span>
+              <span className="text-gray-600">{currentStudent.availability}</span>
             </div>
             <div className="flex items-center gap-2">
               <FileText className="w-4 h-4 text-gray-400" />

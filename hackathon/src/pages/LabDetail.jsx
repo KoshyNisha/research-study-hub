@@ -19,12 +19,13 @@ import Badge from '../components/ui/Badge';
 import MatchScore from '../components/lab/MatchScore';
 import ApplyModal from '../components/lab/ApplyModal';
 import { labs } from '../data/labs';
-import { student } from '../data/student';
+import { getStudentProfile } from '../data/student';
 
 const LabDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [isApplyModalOpen, setIsApplyModalOpen] = useState(false);
+  const student = getStudentProfile();
 
   const lab = labs.find(l => l.id === id);
 
