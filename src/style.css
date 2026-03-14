@@ -1,0 +1,41 @@
+body {
+  font-family: Arial;
+  background: #f4f6fb;
+  margin: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.applyBtn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #0047ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.applyBtn:hover {
+  background: #0034c4;
+}
+
+.filters {
+  text-align: center;
+}
