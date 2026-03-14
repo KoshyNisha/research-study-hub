@@ -1,0 +1,291 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); }
+  .app { padding: 1.5rem 0; max-width: 900px; }
+  .header { margin-bottom: 1.5rem; }
+  .header h1 { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+  .header p { font-size: 14px; color: var(--color-text-secondary); margin-top: 4px; }
+  .connect-banner { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 2rem; text-align: center; margin-bottom: 1.5rem; }
+  .connect-banner h2 { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 8px; }
+  .connect-banner p { font-size: 14px; color: var(--color-text-secondary); margin-bottom: 1.25rem; max-width: 420px; margin-left: auto; margin-right: auto; }
+  .btn-google { display: inline-flex; align-items: center; gap: 10px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; color: var(--color-text-primary); transition: background 0.15s; }
+  .btn-google:hover { background: var(--color-background-secondary); }
+  .btn-google svg { width: 18px; height: 18px; flex-shrink: 0; }
+  .scanning { display: none; background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 2rem; text-align: center; margin-bottom: 1.5rem; }
+  .scanning p { font-size: 14px; color: var(--color-text-secondary); margin-top: 8px; }
+  .progress-bar { width: 200px; height: 4px; background: var(--color-border-tertiary); border-radius: 2px; margin: 12px auto 0; overflow: hidden; }
+  .progress-fill { height: 100%; width: 0%; background: #378ADD; border-radius: 2px; transition: width 0.3s; }
+  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 1.5rem; }
+  .stat-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem; }
+  .stat-card .label { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 4px; }
+  .stat-card .value { font-size: 24px; font-weight: 500; color: var(--color-text-primary); }
+  .filters { display: flex; gap: 8px; margin-bottom: 1rem; flex-wrap: wrap; align-items: center; }
+  .filter-btn { padding: 6px 14px; border: 0.5px solid var(--color-border-tertiary); border-radius: 999px; font-size: 13px; cursor: pointer; background: transparent; color: var(--color-text-secondary); transition: all 0.15s; }
+  .filter-btn.active { border-color: #378ADD; color: #185FA5; background: #E6F1FB; }
+  .search-input { flex: 1; min-width: 180px; padding: 6px 12px; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); font-size: 13px; background: var(--color-background-primary); color: var(--color-text-primary); }
+  .cards { display: flex; flex-direction: column; gap: 10px; }
+  .study-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; cursor: pointer; transition: border-color 0.15s; }
+  .study-card:hover { border-color: var(--color-border-secondary); }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .card-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); }
+  .card-lab { font-size: 13px; color: var(--color-text-secondary); margin-top: 2px; }
+  .compensation { display: inline-flex; align-items: center; gap: 4px; background: #EAF3DE; color: #3B6D11; font-size: 12px; font-weight: 500; padding: 4px 10px; border-radius: 999px; white-space: nowrap; flex-shrink: 0; }
+  .card-meta { display: flex; gap: 16px; margin-top: 10px; flex-wrap: wrap; }
+  .meta-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--color-text-secondary); }
+  .tags { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+  .tag { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); }
+  .card-actions { display: flex; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 0.5px solid var(--color-border-tertiary); }
+  .btn-primary { padding: 7px 16px; background: #185FA5; color: #E6F1FB; border: none; border-radius: var(--border-radius-md); font-size: 13px; cursor: pointer; font-weight: 500; }
+  .btn-secondary { padding: 7px 16px; background: transparent; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); font-size: 13px; cursor: pointer; }
+  .empty { text-align: center; padding: 3rem; color: var(--color-text-secondary); font-size: 14px; }
+  .dashboard { display: none; }
+</style>
+
+<div class="app">
+  <div class="header">
+    <h1>UMich Research Opportunities</h1>
+    <p>Paid studies and research participation — pulled from your inbox</p>
+  </div>
+
+  <div class="connect-banner" id="connectBanner">
+    <h2>Connect your UMich Gmail</h2>
+    <p>We'll scan your inbox for paid research study emails and organize them in one place. No emails are stored — everything stays in your account.</p>
+    <button class="btn-google" onclick="startScan()">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+      </svg>
+      Connect Google Account
+    </button>
+  </div>
+
+  <div class="scanning" id="scanningBanner">
+    <p style="font-size:15px; font-weight:500; color:var(--color-text-primary)">Scanning your inbox...</p>
+    <p id="scanStatus">Searching for research opportunity emails</p>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+
+  <div class="dashboard" id="dashboard">
+    <div class="stats-row">
+      <div class="stat-card"><div class="label">Studies found</div><div class="value" id="statTotal">0</div></div>
+      <div class="stat-card"><div class="label">Total potential earnings</div><div class="value" id="statEarnings">$0</div></div>
+      <div class="stat-card"><div class="label">Closing soon</div><div class="value" id="statSoon">0</div></div>
+    </div>
+
+    <div class="filters">
+      <input class="search-input" type="text" placeholder="Search studies..." id="searchInput" oninput="filterCards()" />
+      <button class="filter-btn active" onclick="setFilter('all', this)">All</button>
+      <button class="filter-btn" onclick="setFilter('engineering', this)">Engineering</button>
+      <button class="filter-btn" onclick="setFilter('robotics', this)">Robotics</button>
+      <button class="filter-btn" onclick="setFilter('hci', this)">HCI</button>
+      <button class="filter-btn" onclick="setFilter('remote', this)">Remote</button>
+    </div>
+
+    <div class="cards" id="cardsContainer"></div>
+  </div>
+</div>
+
+<script>
+const SAMPLE_STUDIES = [
+  {
+    id: 1,
+    title: "Robotic Arm Interaction User Study",
+    lab: "ROAHM Lab — Prof. Vasudevan",
+    department: "Robotics / EECS",
+    compensation: "$30 Amazon gift card",
+    compensationValue: 30,
+    time: "60 min",
+    format: "In-person",
+    deadline: "Mar 28, 2026",
+    eligibility: "UMich students 18+",
+    description: "Evaluating human interaction with robotic arm motion planning. No experience required.",
+    signupUrl: "#",
+    tags: ["robotics", "engineering", "in-person"],
+    closingSoon: true
+  },
+  {
+    id: 2,
+    title: "Wearable Exoskeleton Feedback Study",
+    lab: "Neurobionics Lab — Prof. Elliott",
+    department: "Mechanical Engineering",
+    compensation: "$25 gift card",
+    compensationValue: 25,
+    time: "45 min",
+    format: "In-person",
+    deadline: "Apr 5, 2026",
+    eligibility: "UMich undergrad/grad students",
+    description: "Testing sensory feedback mechanisms in lower-limb prosthetic devices.",
+    signupUrl: "#",
+    tags: ["robotics", "engineering", "wearables"],
+    closingSoon: false
+  },
+  {
+    id: 3,
+    title: "HCI Study: Coding Assistant Interfaces",
+    lab: "Computer Science & Engineering",
+    department: "EECS",
+    compensation: "$20 Venmo",
+    compensationValue: 20,
+    time: "30 min",
+    format: "Remote",
+    deadline: "Apr 12, 2026",
+    eligibility: "CS/EECS students with coding experience",
+    description: "Comparing usability of AI coding assistants. Conducted over Zoom.",
+    signupUrl: "#",
+    tags: ["hci", "engineering", "remote"],
+    closingSoon: false
+  },
+  {
+    id: 4,
+    title: "Autonomous Vehicle Perception Survey",
+    lab: "Ford Motor Company & UMich MCity",
+    department: "Engineering / Transportation",
+    compensation: "$15 gift card",
+    compensationValue: 15,
+    time: "20 min",
+    format: "Remote",
+    deadline: "Mar 22, 2026",
+    eligibility: "Any UMich student",
+    description: "Online survey about trust and perception of autonomous vehicles. Takes 20 minutes.",
+    signupUrl: "#",
+    tags: ["engineering", "remote", "survey"],
+    closingSoon: true
+  },
+  {
+    id: 5,
+    title: "Human-Robot Collaboration Task Study",
+    lab: "Robot Studio Lab — Prof. Alves-Oliveira",
+    department: "Robotics / EECS",
+    compensation: "$40 Amazon gift card",
+    compensationValue: 40,
+    time: "90 min",
+    format: "In-person",
+    deadline: "Apr 18, 2026",
+    eligibility: "UMich students, no robotics experience needed",
+    description: "Study on how people naturally collaborate with social robots on creative tasks.",
+    signupUrl: "#",
+    tags: ["robotics", "hci", "engineering"],
+    closingSoon: false
+  },
+  {
+    id: 6,
+    title: "EECS Senior Design Usability Test",
+    lab: "EECS 481 — Software Engineering",
+    department: "EECS",
+    compensation: "$10 coffee gift card",
+    compensationValue: 10,
+    time: "25 min",
+    format: "Remote",
+    deadline: "Mar 30, 2026",
+    eligibility: "Any UMich student",
+    description: "Testing a student-built app for course planning. Quick Zoom session.",
+    signupUrl: "#",
+    tags: ["hci", "engineering", "remote"],
+    closingSoon: true
+  }
+];
+
+let activeFilter = 'all';
+let studies = [];
+
+function startScan() {
+  document.getElementById('connectBanner').style.display = 'none';
+  document.getElementById('scanningBanner').style.display = 'block';
+
+  const statuses = [
+    "Searching for research opportunity emails...",
+    "Found emails matching 'paid study'...",
+    "Extracting study details with AI...",
+    "Parsing compensation and deadlines...",
+    "Building your dashboard..."
+  ];
+  let i = 0;
+  const fill = document.getElementById('progressFill');
+  const status = document.getElementById('scanStatus');
+
+  const interval = setInterval(() => {
+    if (i < statuses.length) {
+      status.textContent = statuses[i];
+      fill.style.width = ((i + 1) / statuses.length * 100) + '%';
+      i++;
+    } else {
+      clearInterval(interval);
+      setTimeout(showDashboard, 400);
+    }
+  }, 600);
+}
+
+function showDashboard() {
+  document.getElementById('scanningBanner').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+  studies = SAMPLE_STUDIES;
+  updateStats();
+  renderCards(studies);
+}
+
+function updateStats() {
+  document.getElementById('statTotal').textContent = studies.length;
+  const earnings = studies.reduce((s, x) => s + x.compensationValue, 0);
+  document.getElementById('statEarnings').textContent = '$' + earnings;
+  document.getElementById('statSoon').textContent = studies.filter(s => s.closingSoon).length;
+}
+
+function setFilter(f, el) {
+  activeFilter = f;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  filterCards();
+}
+
+function filterCards() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  const filtered = studies.filter(s => {
+    const matchFilter = activeFilter === 'all' || s.tags.includes(activeFilter);
+    const matchSearch = !q || s.title.toLowerCase().includes(q) || s.lab.toLowerCase().includes(q) || s.tags.some(t => t.includes(q));
+    return matchFilter && matchSearch;
+  });
+  renderCards(filtered);
+}
+
+function renderCards(list) {
+  const container = document.getElementById('cardsContainer');
+  if (!list.length) {
+    container.innerHTML = '<div class="empty">No studies match your filters.</div>';
+    return;
+  }
+  container.innerHTML = list.map(s => `
+    <div class="study-card">
+      <div class="card-top">
+        <div>
+          <div class="card-title">${s.title}</div>
+          <div class="card-lab">${s.lab}</div>
+        </div>
+        <span class="compensation">${s.compensation}</span>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">⏱ ${s.time}</span>
+        <span class="meta-item">${s.format === 'Remote' ? '💻' : '📍'} ${s.format}</span>
+        <span class="meta-item">📅 Deadline: ${s.deadline}${s.closingSoon ? ' <span style="color:#BA7517;font-weight:500;">· Closing soon</span>' : ''}</span>
+      </div>
+      <p style="font-size:13px;color:var(--color-text-secondary);margin-top:8px;line-height:1.5;">${s.description}</p>
+      <div class="tags">${s.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+      <div class="card-actions">
+        <button class="btn-primary" onclick="signUp('${s.signupUrl}')">Sign up</button>
+        <button class="btn-secondary" onclick="saveStudy(${s.id})">Save</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function signUp(url) {
+  sendPrompt('Help me prepare for signing up for a research study at UMich — what should I know before participating?');
+}
+
+function saveStudy(id) {
+  const s = studies.find(x => x.id === id);
+  sendPrompt(`I want to save the study "${s.title}" — can you remind me about it and its deadline of ${s.deadline}?`);
+}
+</script>
