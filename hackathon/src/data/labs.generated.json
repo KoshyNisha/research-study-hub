@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "lab_880923046_1",
+    "name": "Natural Language Processing Group",
+    "department": "AI",
+    "pi": "Dr. Honglak Lee",
+    "piEmail": "honglak.lee@umich.edu",
+    "description": "Natural Language Processing Group conducts cutting-edge research in Machine Learning and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Robotics",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 95,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/natural-language-processing-group",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_780633876_4",
+    "name": "Robotics and AI Lab",
+    "department": "AI",
+    "pi": "Dr. Rada Mihalcea",
+    "piEmail": "rada.mihalcea@umich.edu",
+    "description": "Robotics and AI Lab conducts cutting-edge research in HCI and Machine Learning at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Machine Learning",
+      "User Experience"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 93,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/robotics-and-ai-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_780633876_20",
+    "name": "Robotics and AI Lab",
+    "department": "AI",
+    "pi": "Dr. Honglak Lee",
+    "piEmail": "honglak.lee@umich.edu",
+    "description": "Robotics and AI Lab conducts cutting-edge research in Machine Learning and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Robotics",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 93,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/robotics-and-ai-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_71606965_14",
+    "name": "Deep Learning Research Group",
+    "department": "AI",
+    "pi": "Dr. Rada Mihalcea",
+    "piEmail": "rada.mihalcea@umich.edu",
+    "description": "Deep Learning Research Group conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 90,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/deep-learning-research-group",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_71606965_22",
+    "name": "Deep Learning Research Group",
+    "department": "AI",
+    "pi": "Dr. Honglak Lee",
+    "piEmail": "honglak.lee@umich.edu",
+    "description": "Deep Learning Research Group conducts cutting-edge research in HCI and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Computer Vision",
+      "Interaction Design"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 90,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/deep-learning-research-group",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_782044880_0",
+    "name": "Be your own mod: U-M researchers introduce framework for custom content moderation",
+    "department": "AI",
+    "pi": "Dr. Emily Mower Provost",
+    "piEmail": "emily.mower@umich.edu",
+    "description": "A new browser extension designed by CSE researchers allows users to transform social media content instead of suppressing or removing it according to their own preferences.",
+    "researchAreas": [
+      "Machine Learning",
+      "Computer Vision",
+      "Deep Learning"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 88,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/be-your-own-mod-um-researchers-introduce-framework-for-custom-content-moderation",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1769911799_24",
+    "name": "Computer Vision and Learning Lab",
+    "department": "AI",
+    "pi": "Dr. Honglak Lee",
+    "piEmail": "honglak.lee@umich.edu",
+    "description": "Computer Vision and Learning Lab conducts cutting-edge research in Machine Learning and Data Science at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Science",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 88,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/computer-vision-and-learning-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_6757037_24",
+    "name": "Advanced Computer Systems Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Satish Narayanasamy",
+    "piEmail": "satish.narayanasamy@umich.edu",
+    "description": "Advanced Computer Systems Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Control Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 88,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/advanced-computer-systems-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_46231992_11",
+    "name": "Computer Vision and Robotics Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Computer Vision and Robotics Lab conducts cutting-edge research in Robotics and Autonomous Systems at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Autonomous Systems",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 87,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/computer-vision-and-robotics-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_6757037_16",
+    "name": "Advanced Computer Systems Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Advanced Computer Systems Lab conducts cutting-edge research in Machine Learning and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Computer Vision",
+      "Algorithms"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 87,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/advanced-computer-systems-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_413923325_18",
+    "name": "Human-Computer Interaction Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Human-Computer Interaction Lab conducts cutting-edge research in Machine Learning and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Computer Vision",
+      "Algorithms"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 87,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/humancomputer-interaction-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1229622522_10",
+    "name": "AI Ethics and Society Lab",
+    "department": "AI",
+    "pi": "Dr. Honglak Lee",
+    "piEmail": "honglak.lee@umich.edu",
+    "description": "AI Ethics and Society Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 86,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/ai-ethics-and-society-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1592374660_23",
+    "name": "AI for Social Good Lab",
+    "department": "AI",
+    "pi": "Dr. Jenna Wiens",
+    "piEmail": "jenna.wiens@umich.edu",
+    "description": "AI for Social Good Lab conducts cutting-edge research in HCI and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Computer Vision",
+      "Interaction Design"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 86,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/ai-for-social-good-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_889757332_5",
+    "name": "Algorithms and Theory Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Algorithms and Theory Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Control Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 86,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/algorithms-and-theory-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1356874090_7",
+    "name": "Distributed Systems Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Jason Mars",
+    "piEmail": "jason.mars@umich.edu",
+    "description": "Distributed Systems Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Control Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 86,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/distributed-systems-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_46231992_19",
+    "name": "Computer Vision and Robotics Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Mosharaf Chowdhury",
+    "piEmail": "mosharaf.chowdhury@umich.edu",
+    "description": "Computer Vision and Robotics Lab conducts cutting-edge research in HCI and User Interface Design at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "User Interface Design",
+      "Software Engineering"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Programming experience (Python/C++/Java)",
+      "Data structures and algorithms",
+      "Software development skills",
+      "Problem-solving ability"
+    ],
+    "timeCommitment": "12-16 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 84,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/computer-vision-and-robotics-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1713512988_1",
+    "name": "Data Mining and Machine Learning Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Mosharaf Chowdhury",
+    "piEmail": "mosharaf.chowdhury@umich.edu",
+    "description": "Data Mining and Machine Learning Lab conducts cutting-edge research in Robotics and Autonomous Systems at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Autonomous Systems",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 83,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/data-mining-and-machine-learning-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1356874090_15",
+    "name": "Distributed Systems Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Distributed Systems Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Control Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 83,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/distributed-systems-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_71606965_6",
+    "name": "Deep Learning Research Group",
+    "department": "AI",
+    "pi": "Dr. Qiaozhu Mei",
+    "piEmail": "qiaozhu.mei@umich.edu",
+    "description": "Deep Learning Research Group conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 82,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/deep-learning-research-group",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_46231992_3",
+    "name": "Computer Vision and Robotics Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Mosharaf Chowdhury",
+    "piEmail": "mosharaf.chowdhury@umich.edu",
+    "description": "Computer Vision and Robotics Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Control Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 82,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/computer-vision-and-robotics-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_413923325_10",
+    "name": "Human-Computer Interaction Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Human-Computer Interaction Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Control Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 82,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/humancomputer-interaction-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_6757037_8",
+    "name": "Advanced Computer Systems Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Advanced Computer Systems Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Control Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 81,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/advanced-computer-systems-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1713512988_9",
+    "name": "Data Mining and Machine Learning Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Reetuparna Das",
+    "piEmail": "reetuparna.das@umich.edu",
+    "description": "Data Mining and Machine Learning Lab conducts cutting-edge research in Computer Vision and Image Processing at the University of Michigan.",
+    "researchAreas": [
+      "Computer Vision",
+      "Image Processing",
+      "Pattern Recognition"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 81,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/data-mining-and-machine-learning-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1229622522_2",
+    "name": "AI Ethics and Society Lab",
+    "department": "AI",
+    "pi": "Dr. Rada Mihalcea",
+    "piEmail": "rada.mihalcea@umich.edu",
+    "description": "AI Ethics and Society Lab conducts cutting-edge research in Machine Learning and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Computer Vision",
+      "Deep Learning"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 80,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/ai-ethics-and-society-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_880923046_9",
+    "name": "Natural Language Processing Group",
+    "department": "AI",
+    "pi": "Dr. Jenna Wiens",
+    "piEmail": "jenna.wiens@umich.edu",
+    "description": "Natural Language Processing Group conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 80,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/natural-language-processing-group",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1112955189_3",
+    "name": "Machine Learning Systems Lab",
+    "department": "AI",
+    "pi": "Dr. Honglak Lee",
+    "piEmail": "honglak.lee@umich.edu",
+    "description": "Machine Learning Systems Lab conducts cutting-edge research in Computer Vision and Image Processing at the University of Michigan.",
+    "researchAreas": [
+      "Computer Vision",
+      "Image Processing",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 79,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/machine-learning-systems-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1592374660_7",
+    "name": "AI for Social Good Lab",
+    "department": "AI",
+    "pi": "Dr. Honglak Lee",
+    "piEmail": "honglak.lee@umich.edu",
+    "description": "AI for Social Good Lab conducts cutting-edge research in HCI and Machine Learning at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Machine Learning",
+      "User Experience"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 79,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/ai-for-social-good-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1112955189_11",
+    "name": "Machine Learning Systems Lab",
+    "department": "AI",
+    "pi": "Dr. Honglak Lee",
+    "piEmail": "honglak.lee@umich.edu",
+    "description": "Machine Learning Systems Lab conducts cutting-edge research in Machine Learning and Data Science at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Science",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 79,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/machine-learning-systems-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1769911799_16",
+    "name": "Computer Vision and Learning Lab",
+    "department": "AI",
+    "pi": "Dr. Jenna Wiens",
+    "piEmail": "jenna.wiens@umich.edu",
+    "description": "Computer Vision and Learning Lab conducts cutting-edge research in Computer Vision and Image Processing at the University of Michigan.",
+    "researchAreas": [
+      "Computer Vision",
+      "Image Processing",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 78,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/computer-vision-and-learning-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1976685770_21",
+    "name": "Human-AI Interaction Lab",
+    "department": "AI",
+    "pi": "Dr. Emily Mower Provost",
+    "piEmail": "emily.mower@umich.edu",
+    "description": "Human-AI Interaction Lab conducts cutting-edge research in HCI and Machine Learning at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Machine Learning",
+      "User Experience"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 78,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/humanai-interaction-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_780633876_12",
+    "name": "Robotics and AI Lab",
+    "department": "AI",
+    "pi": "Dr. Qiaozhu Mei",
+    "piEmail": "qiaozhu.mei@umich.edu",
+    "description": "Robotics and AI Lab conducts cutting-edge research in Machine Learning and Data Science at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Science",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 77,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/robotics-and-ai-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1229622522_18",
+    "name": "AI Ethics and Society Lab",
+    "department": "AI",
+    "pi": "Dr. Honglak Lee",
+    "piEmail": "honglak.lee@umich.edu",
+    "description": "AI Ethics and Society Lab conducts cutting-edge research in Machine Learning and Data Science at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Science",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 77,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/ai-ethics-and-society-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1713512988_17",
+    "name": "Data Mining and Machine Learning Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Satish Narayanasamy",
+    "piEmail": "satish.narayanasamy@umich.edu",
+    "description": "Data Mining and Machine Learning Lab conducts cutting-edge research in Robotics and Autonomous Systems at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Autonomous Systems",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 77,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/data-mining-and-machine-learning-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1356874090_23",
+    "name": "Distributed Systems Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Satish Narayanasamy",
+    "piEmail": "satish.narayanasamy@umich.edu",
+    "description": "Distributed Systems Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Control Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 77,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/distributed-systems-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1976685770_5",
+    "name": "Human-AI Interaction Lab",
+    "department": "AI",
+    "pi": "Dr. Qiaozhu Mei",
+    "piEmail": "qiaozhu.mei@umich.edu",
+    "description": "Human-AI Interaction Lab conducts cutting-edge research in Machine Learning and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Computer Vision",
+      "Deep Learning"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 76,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/humanai-interaction-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1976685770_13",
+    "name": "Human-AI Interaction Lab",
+    "department": "AI",
+    "pi": "Dr. Rada Mihalcea",
+    "piEmail": "rada.mihalcea@umich.edu",
+    "description": "Human-AI Interaction Lab conducts cutting-edge research in Machine Learning and Data Science at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Science",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 75,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/humanai-interaction-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_889757332_13",
+    "name": "Algorithms and Theory Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Jason Mars",
+    "piEmail": "jason.mars@umich.edu",
+    "description": "Algorithms and Theory Lab conducts cutting-edge research in Machine Learning and Data Mining at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Mining",
+      "Big Data"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 75,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/algorithms-and-theory-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_475785451_6",
+    "name": "Security and Privacy Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Reetuparna Das",
+    "piEmail": "reetuparna.das@umich.edu",
+    "description": "Security and Privacy Lab conducts cutting-edge research in Machine Learning and Data Mining at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Mining",
+      "Big Data"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 74,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/security-and-privacy-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1592374660_15",
+    "name": "AI for Social Good Lab",
+    "department": "AI",
+    "pi": "Dr. Jenna Wiens",
+    "piEmail": "jenna.wiens@umich.edu",
+    "description": "AI for Social Good Lab conducts cutting-edge research in HCI and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Computer Vision",
+      "Interaction Design"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 73,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/ai-for-social-good-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1112955189_19",
+    "name": "Machine Learning Systems Lab",
+    "department": "AI",
+    "pi": "Dr. Emily Mower Provost",
+    "piEmail": "emily.mower@umich.edu",
+    "description": "Machine Learning Systems Lab conducts cutting-edge research in Machine Learning and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Computer Vision",
+      "Deep Learning"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 72,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/machine-learning-systems-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_6757037_0",
+    "name": "Advanced Computer Systems Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Mosharaf Chowdhury",
+    "piEmail": "mosharaf.chowdhury@umich.edu",
+    "description": "Advanced Computer Systems Lab conducts cutting-edge research in Machine Learning and Natural Language Processing at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Natural Language Processing",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 72,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/advanced-computer-systems-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1092867924_20",
+    "name": "Software Systems Research Group",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Reetuparna Das",
+    "piEmail": "reetuparna.das@umich.edu",
+    "description": "Software Systems Research Group conducts cutting-edge research in HCI and Human-Computer Interaction at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Human-Computer Interaction",
+      "UX Research"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "JavaScript/React experience",
+      "UI/UX design skills",
+      "User research experience",
+      "Statistics background"
+    ],
+    "timeCommitment": "10-15 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 72,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/software-systems-research-group",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_475785451_22",
+    "name": "Security and Privacy Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Satish Narayanasamy",
+    "piEmail": "satish.narayanasamy@umich.edu",
+    "description": "Security and Privacy Lab conducts cutting-edge research in HCI and Human-Computer Interaction at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Human-Computer Interaction",
+      "UX Research"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "JavaScript/React experience",
+      "UI/UX design skills",
+      "User research experience",
+      "Statistics background"
+    ],
+    "timeCommitment": "10-15 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 72,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/security-and-privacy-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1769911799_8",
+    "name": "Computer Vision and Learning Lab",
+    "department": "AI",
+    "pi": "Dr. Jenna Wiens",
+    "piEmail": "jenna.wiens@umich.edu",
+    "description": "Computer Vision and Learning Lab conducts cutting-edge research in HCI and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Computer Vision",
+      "Interaction Design"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 71,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/computer-vision-and-learning-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_880923046_17",
+    "name": "Natural Language Processing Group",
+    "department": "AI",
+    "pi": "Dr. Emily Mower Provost",
+    "piEmail": "emily.mower@umich.edu",
+    "description": "Natural Language Processing Group conducts cutting-edge research in Machine Learning and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Computer Vision",
+      "Deep Learning"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 70,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/natural-language-processing-group",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1092867924_4",
+    "name": "Software Systems Research Group",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Reetuparna Das",
+    "piEmail": "reetuparna.das@umich.edu",
+    "description": "Software Systems Research Group conducts cutting-edge research in Computer Vision and Image Processing at the University of Michigan.",
+    "researchAreas": [
+      "Computer Vision",
+      "Image Processing",
+      "Pattern Recognition"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 70,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/software-systems-research-group",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_475785451_14",
+    "name": "Security and Privacy Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Jason Mars",
+    "piEmail": "jason.mars@umich.edu",
+    "description": "Security and Privacy Lab conducts cutting-edge research in HCI and Human-Computer Interaction at the University of Michigan.",
+    "researchAreas": [
+      "HCI",
+      "Human-Computer Interaction",
+      "UX Research"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "JavaScript/React experience",
+      "UI/UX design skills",
+      "User research experience",
+      "Statistics background"
+    ],
+    "timeCommitment": "10-15 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 70,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/security-and-privacy-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_413923325_2",
+    "name": "Human-Computer Interaction Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Jason Mars",
+    "piEmail": "jason.mars@umich.edu",
+    "description": "Human-Computer Interaction Lab conducts cutting-edge research in Machine Learning and Natural Language Processing at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Natural Language Processing",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 69,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/humancomputer-interaction-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1629816064_0",
+    "name": "Radiation Laboratory (RADLAB)",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. David Wentzloff",
+    "piEmail": "david.wentzloff@umich.edu",
+    "description": "The nation’s premier lab in applied electromagnetics: radar, wireless, antennas, remote sensing, and RF circuits. Featuring state-of-the-art facilities and world-class academics.",
+    "researchAreas": [
+      "Computer Vision",
+      "Machine Learning",
+      "Hardware"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Circuit analysis experience",
+      "MATLAB or Python programming",
+      "Electrical engineering fundamentals",
+      "Laboratory experience"
+    ],
+    "timeCommitment": "14-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 66,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "http://radlab.engin.umich.edu/",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2039827613_24",
+    "name": "Integrated Circuits and Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "Integrated Circuits and Systems Lab conducts cutting-edge research in Computer Vision and Machine Learning at the University of Michigan.",
+    "researchAreas": [
+      "Computer Vision",
+      "Machine Learning",
+      "Hardware"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Circuit analysis experience",
+      "MATLAB or Python programming",
+      "Electrical engineering fundamentals",
+      "Laboratory experience"
+    ],
+    "timeCommitment": "14-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 65,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/integrated-circuits-and-systems-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1092867924_12",
+    "name": "Software Systems Research Group",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Software Systems Research Group conducts cutting-edge research in Computer Vision and Image Processing at the University of Michigan.",
+    "researchAreas": [
+      "Computer Vision",
+      "Image Processing",
+      "Pattern Recognition"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 64,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/software-systems-research-group",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1745108782_18",
+    "name": "Control Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Mingyan Liu",
+    "piEmail": "mingyan.liu@umich.edu",
+    "description": "Control Systems Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Sensor Fusion"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 63,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/control-systems-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_889757332_21",
+    "name": "Algorithms and Theory Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Jason Mars",
+    "piEmail": "jason.mars@umich.edu",
+    "description": "Algorithms and Theory Lab conducts cutting-edge research in Computer Vision and Image Processing at the University of Michigan.",
+    "researchAreas": [
+      "Computer Vision",
+      "Image Processing",
+      "Pattern Recognition"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python and OpenCV experience",
+      "Computer vision coursework",
+      "Image processing knowledge",
+      "Linear algebra background"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 63,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/algorithms-and-theory-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2147024887_5",
+    "name": "Robotics and Automation Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "Robotics and Automation Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Sensor Fusion"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 59,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/robotics-and-automation-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1098950518_9",
+    "name": "Wireless Communications Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Jamie Phillips",
+    "piEmail": "jamie.phillips@umich.edu",
+    "description": "Wireless Communications Lab conducts cutting-edge research in Robotics and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Sensor Fusion"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 56,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/wireless-communications-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2147024887_13",
+    "name": "Robotics and Automation Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Jamie Phillips",
+    "piEmail": "jamie.phillips@umich.edu",
+    "description": "Robotics and Automation Lab conducts cutting-edge research in Control Systems and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Control Systems",
+      "Robotics",
+      "Automation"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 56,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/robotics-and-automation-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1219095818_4",
+    "name": "Signal Processing Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Zhaohui Zhong",
+    "piEmail": "zhaohui.zhong@umich.edu",
+    "description": "Signal Processing Lab conducts cutting-edge research in Machine Learning and Circuit Design at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Circuit Design",
+      "Hardware Acceleration"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Circuit analysis experience",
+      "MATLAB or Python programming",
+      "Electrical engineering fundamentals",
+      "Laboratory experience"
+    ],
+    "timeCommitment": "14-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 55,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/signal-processing-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2039827613_16",
+    "name": "Integrated Circuits and Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Jamie Phillips",
+    "piEmail": "jamie.phillips@umich.edu",
+    "description": "Integrated Circuits and Systems Lab conducts cutting-edge research in Machine Learning and Circuit Design at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Circuit Design",
+      "Hardware Acceleration"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Circuit analysis experience",
+      "MATLAB or Python programming",
+      "Electrical engineering fundamentals",
+      "Laboratory experience"
+    ],
+    "timeCommitment": "14-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 55,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/integrated-circuits-and-systems-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1219095818_12",
+    "name": "Signal Processing Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Zhaohui Zhong",
+    "piEmail": "zhaohui.zhong@umich.edu",
+    "description": "Signal Processing Lab conducts cutting-edge research in Robotics and Control Systems at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Control Systems",
+      "Embedded Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 52,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/signal-processing-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1361138893_19",
+    "name": "Power Electronics Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Mingyan Liu",
+    "piEmail": "mingyan.liu@umich.edu",
+    "description": "Power Electronics Lab conducts cutting-edge research in Embedded Systems and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Embedded Systems",
+      "Robotics",
+      "Real-time Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 51,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/power-electronics-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1219095818_20",
+    "name": "Signal Processing Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. David Wentzloff",
+    "piEmail": "david.wentzloff@umich.edu",
+    "description": "Signal Processing Lab conducts cutting-edge research in Embedded Systems and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Embedded Systems",
+      "Robotics",
+      "Real-time Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 51,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/signal-processing-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2136231043_23",
+    "name": "Embedded Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Jamie Phillips",
+    "piEmail": "jamie.phillips@umich.edu",
+    "description": "Embedded Systems Lab conducts cutting-edge research in Embedded Systems and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Embedded Systems",
+      "Robotics",
+      "Real-time Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 50,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/embedded-systems-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1637224691_2",
+    "name": "Biochemistry Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "Biochemistry Lab conducts cutting-edge research in Medical Imaging and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Medical Imaging",
+      "Computer Vision",
+      "Diagnostic Tools"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 50,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/biochemistry-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1493132593_8",
+    "name": "Molecular Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "Molecular Biology Lab conducts cutting-edge research in Medical Imaging and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Medical Imaging",
+      "Computer Vision",
+      "Diagnostic Tools"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 47,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/molecular-biology-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1745108782_2",
+    "name": "Control Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "Control Systems Lab conducts cutting-edge research in Control Systems and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Control Systems",
+      "Robotics",
+      "Automation"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 46,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/control-systems-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_922081550_22",
+    "name": "Photonics and Optics Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Zhaohui Zhong",
+    "piEmail": "zhaohui.zhong@umich.edu",
+    "description": "Photonics and Optics Lab conducts cutting-edge research in Signal Processing and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Signal Processing",
+      "Computer Vision",
+      "Image Analysis"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "MATLAB programming",
+      "Signal processing knowledge",
+      "Communications theory",
+      "Mathematics background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 46,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/photonics-and-optics-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_922081550_6",
+    "name": "Photonics and Optics Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. David Wentzloff",
+    "piEmail": "david.wentzloff@umich.edu",
+    "description": "Photonics and Optics Lab conducts cutting-edge research in Control Systems and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Control Systems",
+      "Robotics",
+      "Automation"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 45,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/photonics-and-optics-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_922081550_14",
+    "name": "Photonics and Optics Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Mingyan Liu",
+    "piEmail": "mingyan.liu@umich.edu",
+    "description": "Photonics and Optics Lab conducts cutting-edge research in Robotics and Control Systems at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Control Systems",
+      "Embedded Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 44,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/photonics-and-optics-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1098950518_17",
+    "name": "Wireless Communications Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Jamie Phillips",
+    "piEmail": "jamie.phillips@umich.edu",
+    "description": "Wireless Communications Lab conducts cutting-edge research in Signal Processing and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Signal Processing",
+      "Computer Vision",
+      "Image Analysis"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "MATLAB programming",
+      "Signal processing knowledge",
+      "Communications theory",
+      "Mathematics background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 44,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/wireless-communications-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_242285253_7",
+    "name": "Developmental Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Larsen",
+    "piEmail": "scott.larsen@umich.edu",
+    "description": "Developmental Biology Lab conducts cutting-edge research in Genomics and Machine Learning at the University of Michigan.",
+    "researchAreas": [
+      "Genomics",
+      "Machine Learning",
+      "Personalized Medicine"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 44,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/developmental-biology-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2136231043_15",
+    "name": "Embedded Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "Embedded Systems Lab conducts cutting-edge research in Control Systems and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Control Systems",
+      "Robotics",
+      "Automation"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 43,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/embedded-systems-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2147024887_21",
+    "name": "Robotics and Automation Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "Robotics and Automation Lab conducts cutting-edge research in Robotics and Control Systems at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Control Systems",
+      "Embedded Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 43,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/robotics-and-automation-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1371791657_9",
+    "name": "Cell Biology Research Group",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Yali Dou",
+    "piEmail": "yali.dou@umich.edu",
+    "description": "Cell Biology Research Group conducts cutting-edge research in Neuroscience and Brain Imaging at the University of Michigan.",
+    "researchAreas": [
+      "Neuroscience",
+      "Brain Imaging",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 43,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/cell-biology-research-group",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1098950518_1",
+    "name": "Wireless Communications Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Jamie Phillips",
+    "piEmail": "jamie.phillips@umich.edu",
+    "description": "Wireless Communications Lab conducts cutting-edge research in Embedded Systems and Robotics at the University of Michigan.",
+    "researchAreas": [
+      "Embedded Systems",
+      "Robotics",
+      "Real-time Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 42,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/wireless-communications-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1745108782_10",
+    "name": "Control Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Mingyan Liu",
+    "piEmail": "mingyan.liu@umich.edu",
+    "description": "Control Systems Lab conducts cutting-edge research in Robotics and Control Systems at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Control Systems",
+      "Embedded Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 41,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/control-systems-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1361138893_3",
+    "name": "Power Electronics Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "Power Electronics Lab conducts cutting-edge research in Machine Learning and Circuit Design at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Circuit Design",
+      "Hardware Acceleration"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Circuit analysis experience",
+      "MATLAB or Python programming",
+      "Electrical engineering fundamentals",
+      "Laboratory experience"
+    ],
+    "timeCommitment": "14-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 40,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/power-electronics-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2039827613_8",
+    "name": "Integrated Circuits and Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "Integrated Circuits and Systems Lab conducts cutting-edge research in Robotics and Control Systems at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Control Systems",
+      "Embedded Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 40,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/integrated-circuits-and-systems-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_674674278_20",
+    "name": "Neuroscience Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Yali Dou",
+    "piEmail": "yali.dou@umich.edu",
+    "description": "Neuroscience Lab conducts cutting-edge research in Medical Imaging and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Medical Imaging",
+      "Computer Vision",
+      "Diagnostic Tools"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 40,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/neuroscience-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1361138893_11",
+    "name": "Power Electronics Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Zhaohui Zhong",
+    "piEmail": "zhaohui.zhong@umich.edu",
+    "description": "Power Electronics Lab conducts cutting-edge research in Signal Processing and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Signal Processing",
+      "Computer Vision",
+      "Medical Imaging"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "MATLAB programming",
+      "Signal processing knowledge",
+      "Communications theory",
+      "Mathematics background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 39,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/power-electronics-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_242285253_15",
+    "name": "Developmental Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Arianna Rathbun",
+    "piEmail": "arianna.rathbun@umich.edu",
+    "description": "Developmental Biology Lab conducts cutting-edge research in Neuroscience and Brain Imaging at the University of Michigan.",
+    "researchAreas": [
+      "Neuroscience",
+      "Brain Imaging",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 38,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/developmental-biology-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2136231043_7",
+    "name": "Embedded Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Mingyan Liu",
+    "piEmail": "mingyan.liu@umich.edu",
+    "description": "Embedded Systems Lab conducts cutting-edge research in Signal Processing and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Signal Processing",
+      "Computer Vision",
+      "Image Analysis"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "MATLAB programming",
+      "Signal processing knowledge",
+      "Communications theory",
+      "Mathematics background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 37,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/embedded-systems-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2071884941_13",
+    "name": "Immunology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Yali Dou",
+    "piEmail": "yali.dou@umich.edu",
+    "description": "Immunology Lab conducts cutting-edge research in Genomics and Machine Learning at the University of Michigan.",
+    "researchAreas": [
+      "Genomics",
+      "Machine Learning",
+      "Personalized Medicine"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 37,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/immunology-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2071884941_21",
+    "name": "Immunology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "Immunology Lab conducts cutting-edge research in Neuroscience and Brain Imaging at the University of Michigan.",
+    "researchAreas": [
+      "Neuroscience",
+      "Brain Imaging",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 37,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/immunology-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_674674278_4",
+    "name": "Neuroscience Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "Neuroscience Lab conducts cutting-edge research in Genomics and Machine Learning at the University of Michigan.",
+    "researchAreas": [
+      "Genomics",
+      "Machine Learning",
+      "Personalized Medicine"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 36,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/neuroscience-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_186773343_22",
+    "name": "Cancer Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Yali Dou",
+    "piEmail": "yali.dou@umich.edu",
+    "description": "Cancer Biology Lab conducts cutting-edge research in Medical Imaging and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Medical Imaging",
+      "Computer Vision",
+      "Diagnostic Tools"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 36,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/cancer-biology-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_242285253_23",
+    "name": "Developmental Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "Developmental Biology Lab conducts cutting-edge research in Medical Imaging and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Medical Imaging",
+      "Computer Vision",
+      "Diagnostic Tools"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 36,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/developmental-biology-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1493132593_24",
+    "name": "Molecular Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "Molecular Biology Lab conducts cutting-edge research in Drug Discovery and Computational Chemistry at the University of Michigan.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 36,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/molecular-biology-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_186773343_6",
+    "name": "Cancer Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "Cancer Biology Lab conducts cutting-edge research in Genomics and Machine Learning at the University of Michigan.",
+    "researchAreas": [
+      "Genomics",
+      "Machine Learning",
+      "Personalized Medicine"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 35,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/cancer-biology-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1637224691_10",
+    "name": "Biochemistry Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "Biochemistry Lab conducts cutting-edge research in Bioinformatics and Data Analysis at the University of Michigan.",
+    "researchAreas": [
+      "Bioinformatics",
+      "Data Analysis",
+      "Systems Biology"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 35,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/biochemistry-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1371791657_1",
+    "name": "Cell Biology Research Group",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Yali Dou",
+    "piEmail": "yali.dou@umich.edu",
+    "description": "Cell Biology Research Group conducts cutting-edge research in Biophysics and Computational Modeling at the University of Michigan.",
+    "researchAreas": [
+      "Biophysics",
+      "Computational Modeling",
+      "Data Science"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 34,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/cell-biology-research-group",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1493132593_16",
+    "name": "Molecular Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "Molecular Biology Lab conducts cutting-edge research in Computational Biology and Machine Learning at the University of Michigan.",
+    "researchAreas": [
+      "Computational Biology",
+      "Machine Learning",
+      "Genomics"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 34,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/molecular-biology-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_186773343_14",
+    "name": "Cancer Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "Cancer Biology Lab conducts cutting-edge research in Medical Imaging and Computer Vision at the University of Michigan.",
+    "researchAreas": [
+      "Medical Imaging",
+      "Computer Vision",
+      "Diagnostic Tools"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 33,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/cancer-biology-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1371791657_17",
+    "name": "Cell Biology Research Group",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Larsen",
+    "piEmail": "scott.larsen@umich.edu",
+    "description": "Cell Biology Research Group conducts cutting-edge research in Neuroscience and Brain Imaging at the University of Michigan.",
+    "researchAreas": [
+      "Neuroscience",
+      "Brain Imaging",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 33,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/cell-biology-research-group",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1396773828_3",
+    "name": "Genomics and Bioinformatics Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "Genomics and Bioinformatics Lab conducts cutting-edge research in Drug Discovery and Computational Chemistry at the University of Michigan.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 31,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/genomics-and-bioinformatics-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2071884941_5",
+    "name": "Immunology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Arianna Rathbun",
+    "piEmail": "arianna.rathbun@umich.edu",
+    "description": "Immunology Lab conducts cutting-edge research in Microscopy and Image Analysis at the University of Michigan.",
+    "researchAreas": [
+      "Microscopy",
+      "Image Analysis",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 31,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/immunology-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1493132593_0",
+    "name": "Molecular Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "Building on LSI’s collaborative, interdisciplinary focus, the LSI Trainees Group hosts events and training programs aimed at nurturing a sense of community at the LSI and sharing best practices around science, communication and careers.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 30,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/molecular-biology-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1396773828_11",
+    "name": "Genomics and Bioinformatics Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Yali Dou",
+    "piEmail": "yali.dou@umich.edu",
+    "description": "Genomics and Bioinformatics Lab conducts cutting-edge research in Bioinformatics and Data Analysis at the University of Michigan.",
+    "researchAreas": [
+      "Bioinformatics",
+      "Data Analysis",
+      "Systems Biology"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 29,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/genomics-and-bioinformatics-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_674674278_12",
+    "name": "Neuroscience Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "Neuroscience Lab conducts cutting-edge research in Drug Discovery and Computational Chemistry at the University of Michigan.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 28,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/neuroscience-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1637224691_18",
+    "name": "Biochemistry Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Arianna Rathbun",
+    "piEmail": "arianna.rathbun@umich.edu",
+    "description": "Biochemistry Lab conducts cutting-edge research in Biophysics and Computational Modeling at the University of Michigan.",
+    "researchAreas": [
+      "Biophysics",
+      "Computational Modeling",
+      "Data Science"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 28,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/biochemistry-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1396773828_19",
+    "name": "Genomics and Bioinformatics Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Yali Dou",
+    "piEmail": "yali.dou@umich.edu",
+    "description": "Genomics and Bioinformatics Lab conducts cutting-edge research in Bioinformatics and Data Analysis at the University of Michigan.",
+    "researchAreas": [
+      "Bioinformatics",
+      "Data Analysis",
+      "Systems Biology"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 24,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/research/genomics-and-bioinformatics-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  }
+]

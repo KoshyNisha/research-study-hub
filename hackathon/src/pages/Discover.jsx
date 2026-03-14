@@ -1,13 +1,14 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Search, SlidersHorizontal } from 'lucide-react';
 import PageWrapper from '../components/layout/PageWrapper';
 import Sidebar from '../components/layout/Sidebar';
 import LabCard from '../components/lab/LabCard';
-import { labs } from '../data/labs';
+import { labs, recalculateMatchScores } from '../data/labs';
 
 const Discover = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showMobileFilters, setShowMobileFilters] = useState(false);
+  const [currentLabs, setCurrentLabs] = useState(labs);
   const [filters, setFilters] = useState({
     minMatchScore: 0,
     paidOnly: false,
@@ -16,20 +17,26 @@ const Discover = () => {
     researchAreas: []
   });
 
+  // Recalculate match scores when component mounts (after potential profile updates)
+  useEffect(() => {
+    const updatedLabs = recalculateMatchScores();
+    setCurrentLabs(updatedLabs);
+  }, []);
+
   // Extract unique departments and research areas
   const departments = useMemo(() =>
-    [...new Set(labs.map(lab => lab.department))].sort(),
-    []
+    [...new Set(currentLabs.map(lab => lab.department))].sort(),
+    [currentLabs]
   );
 
   const researchAreas = useMemo(() =>
-    [...new Set(labs.flatMap(lab => lab.researchAreas))].sort(),
-    []
+    [...new Set(currentLabs.flatMap(lab => lab.researchAreas))].sort(),
+    [currentLabs]
   );
 
   // Filter labs
   const filteredLabs = useMemo(() => {
-    return labs.filter(lab => {
+    return currentLabs.filter(lab => {
       // Search query
       if (searchQuery) {
         const query = searchQuery.toLowerCase();

@@ -1,4 +1,7 @@
-export const labs = [
+import generatedLabs from './labs.generated.json' with { type: 'json' };
+
+// Static fallback labs in case scraping fails
+const fallbackLabs = [
   {
     id: "lab_001",
     name: "Michigan AI Lab",
@@ -36,121 +39,216 @@ export const labs = [
     website: "robotics.umich.edu",
     openPositions: 2,
     postedDate: "2025-01-10"
-  },
-  {
-    id: "lab_003",
-    name: "Social Media Research Lab",
-    department: "Information",
-    pi: "Dr. Cliff Lampe",
-    piEmail: "cacl@umich.edu",
-    description: "Studying how people interact with technology and each other through social media platforms. We use computational social science methods to understand online behavior.",
-    researchAreas: ["Social Computing", "HCI", "Computational Social Science", "Online Communities"],
-    requirements: ["Python", "Data Analysis", "Statistics", "R"],
-    timeCommitment: "8-12 hours/week",
-    credit: true,
-    paid: false,
-    matchScore: 65,
-    image: "/lab-images/social-media.jpg",
-    location: "North Quad",
-    website: "socialmedia.umich.edu",
-    openPositions: 5,
-    postedDate: "2025-01-20"
-  },
-  {
-    id: "lab_004",
-    name: "Computer Vision Lab",
-    department: "Computer Science",
-    pi: "Dr. Jia Deng",
-    piEmail: "jiadeng@umich.edu",
-    description: "Pushing the boundaries of computer vision and visual understanding. Our research includes 3D scene understanding, object detection, and visual reasoning.",
-    researchAreas: ["Computer Vision", "3D Vision", "Deep Learning", "Scene Understanding"],
-    requirements: ["Python", "PyTorch", "Computer Vision", "Linear Algebra"],
-    timeCommitment: "12-15 hours/week",
-    credit: true,
-    paid: true,
-    matchScore: 88,
-    image: "/lab-images/cv-lab.jpg",
-    location: "Beyster Building",
-    website: "cvlab.umich.edu",
-    openPositions: 2,
-    postedDate: "2025-01-12"
-  },
-  {
-    id: "lab_005",
-    name: "Cognitive Science Lab",
-    department: "Psychology",
-    pi: "Dr. John Jonides",
-    piEmail: "jonides@umich.edu",
-    description: "Investigating the neural basis of cognition using fMRI and behavioral experiments. We study working memory, attention, and decision-making.",
-    researchAreas: ["Cognitive Neuroscience", "fMRI", "Working Memory", "Attention"],
-    requirements: ["Statistics", "R", "Psychology background", "Research methods"],
-    timeCommitment: "10 hours/week",
-    credit: true,
-    paid: false,
-    matchScore: 45,
-    image: "/lab-images/cogsci.jpg",
-    location: "East Hall",
-    website: "cogsci.umich.edu",
-    openPositions: 4,
-    postedDate: "2025-01-18"
-  },
-  {
-    id: "lab_006",
-    name: "Data Systems Research Group",
-    department: "Computer Science",
-    pi: "Dr. Barzan Mozafari",
-    piEmail: "mozafari@umich.edu",
-    description: "Building next-generation database systems and data infrastructure. We work on query optimization, distributed systems, and machine learning for databases.",
-    researchAreas: ["Database Systems", "Distributed Systems", "Query Optimization", "ML for Systems"],
-    requirements: ["C++", "Java", "Database concepts", "Systems programming"],
-    timeCommitment: "15 hours/week",
-    credit: true,
-    paid: true,
-    matchScore: 55,
-    image: "/lab-images/data-systems.jpg",
-    location: "Beyster Building",
-    website: "dsg.umich.edu",
-    openPositions: 3,
-    postedDate: "2025-01-08"
-  },
-  {
-    id: "lab_007",
-    name: "Human-Computer Interaction Lab",
-    department: "Information",
-    pi: "Dr. Eytan Adar",
-    piEmail: "eytan@umich.edu",
-    description: "Designing and building novel interactive systems. We focus on information visualization, social computing, and tools for digital curation.",
-    researchAreas: ["HCI", "Information Visualization", "Social Computing", "Interaction Design"],
-    requirements: ["JavaScript", "React", "D3.js", "Design thinking"],
-    timeCommitment: "10-12 hours/week",
-    credit: true,
-    paid: true,
-    matchScore: 82,
-    image: "/lab-images/hci.jpg",
-    location: "North Quad",
-    website: "hci.umich.edu",
-    openPositions: 3,
-    postedDate: "2025-01-14"
-  },
-  {
-    id: "lab_008",
-    name: "Computational Biology Lab",
-    department: "Biology",
-    pi: "Dr. Jun Li",
-    piEmail: "junli@umich.edu",
-    description: "Applying machine learning to understand biological systems. We analyze genomic data, protein structures, and develop computational models of disease.",
-    researchAreas: ["Computational Biology", "Bioinformatics", "Genomics", "Machine Learning"],
-    requirements: ["Python", "R", "Biology background", "Statistics"],
-    timeCommitment: "12 hours/week",
-    credit: true,
-    paid: true,
-    matchScore: 38,
-    image: "/lab-images/comp-bio.jpg",
-    location: "Life Sciences Institute",
-    website: "compbio.umich.edu",
-    openPositions: 2,
-    postedDate: "2025-01-16"
   }
 ];
 
-export default labs;
+// Student profile for match score calculation
+const getStudentProfile = () => {
+  if (typeof window !== "undefined") {
+    const stored = window.localStorage.getItem("labbridge.profile");
+    if (stored) {
+      try {
+        const parsed = JSON.parse(stored);
+        return {
+          major: parsed.major || "Computer Science",
+          interests: parsed.interests || ["Machine Learning", "Computer Vision", "HCI", "Robotics"],
+          skills: parsed.skills || ["Python", "PyTorch", "React", "JavaScript", "C++", "OpenCV"]
+        };
+      } catch (error) {
+        console.warn('Failed to parse stored profile:', error);
+      }
+    }
+  }
+  return {
+    major: "Computer Science",
+    interests: ["Machine Learning", "Computer Vision", "HCI", "Robotics"],
+    skills: ["Python", "PyTorch", "React", "JavaScript", "C++", "OpenCV"]
+  };
+};
+
+function calculateMatchScore(lab, studentProfile) {
+  let score = 0;
+
+  // Department matching with higher base scores
+  const studentMajor = studentProfile.major.toLowerCase();
+  const labDept = lab.department.toLowerCase();
+
+  if (studentMajor.includes('computer science') &&
+      (labDept.includes('computer science') || labDept.includes('ai') || labDept.includes('cse'))) {
+    score += 60 + Math.random() * 15; // 60-75 points for perfect major match
+  } else if (labDept.includes('electrical') || labDept.includes('ece')) {
+    score += 45 + Math.random() * 15; // 45-60 points for ECE
+  } else if (labDept.includes('life sciences') || labDept.includes('biology')) {
+    score += 25 + Math.random() * 10; // 25-35 points for life sciences
+  } else {
+    score += 20 + Math.random() * 10; // 20-30 points for other departments
+  }
+
+  // Enhanced keyword matching with much higher weighting
+  const keywords = studentProfile.interests.map(interest => interest.toLowerCase());
+  const textToCheck = `${lab.name} ${lab.description} ${lab.researchAreas?.join(' ') || ''}`.toLowerCase();
+
+  let keywordScore = 0;
+  let hasInterestMatch = false;
+
+  keywords.forEach(keyword => {
+    if (textToCheck.includes(keyword)) {
+      hasInterestMatch = true;
+      // Much higher points for exact matches in research areas vs general text
+      const researchAreasText = lab.researchAreas?.join(' ').toLowerCase() || '';
+      if (researchAreasText.includes(keyword)) {
+        keywordScore += 25 + Math.random() * 15; // 25-40 points for research area match
+      } else {
+        keywordScore += 15 + Math.random() * 10; // 15-25 points for general match
+      }
+    }
+  });
+
+  // If no interest matches at all, significantly reduce score
+  if (!hasInterestMatch) {
+    score *= 0.2; // Reduce score by 80% if no interest alignment
+    score = Math.max(score, 12); // But keep minimum at 12%
+  } else {
+    // Bonus for having interest matches
+    score += 15;
+  }
+
+  // Cap keyword score but allow higher maximum
+  score += Math.min(keywordScore, 60);
+
+  // Skills matching with higher weighting
+  const relevantSkills = studentProfile.skills.map(skill => skill.toLowerCase());
+  const skillsText = lab.requirements?.join(' ').toLowerCase() || '';
+  let skillScore = 0;
+
+  relevantSkills.forEach(skill => {
+    if (skillsText.includes(skill)) {
+      skillScore += 12 + Math.random() * 8; // 12-20 points per skill match
+    }
+  });
+
+  score += Math.min(skillScore, 30);
+
+  // Research area alignment bonus - higher for better alignment
+  if (lab.researchAreas && lab.researchAreas.length > 0) {
+    const researchAlignment = lab.researchAreas.filter(area =>
+      studentProfile.interests.some(interest =>
+        area.toLowerCase().includes(interest.toLowerCase()) ||
+        interest.toLowerCase().includes(area.toLowerCase())
+      )
+    ).length;
+
+    if (researchAlignment > 0) {
+      score += researchAlignment * (8 + Math.random() * 7); // 8-15 points per aligned research area
+    }
+  }
+
+  // Reduced random variation (±3 points) to prevent irrelevant labs from ranking higher
+  score += (Math.random() - 0.5) * 6;
+
+  // More nuanced scoring based on match quality
+  let finalScore = score;
+
+  if (hasInterestMatch) {
+    // Calculate match quality based on multiple factors (0-100 scale)
+    let matchQuality = 0;
+
+    // Base quality from keyword matches (0-30 points)
+    matchQuality += Math.min(keywordScore * 0.5, 30);
+
+    // Department alignment bonus (0-25 points)
+    if (studentMajor.includes('computer science') &&
+        (labDept.includes('computer science') || labDept.includes('ai') || labDept.includes('cse'))) {
+      matchQuality += 25;
+    } else if (labDept.includes('electrical') || labDept.includes('ece')) {
+      matchQuality += 15;
+    } else if (labDept.includes('life sciences') || labDept.includes('biology')) {
+      matchQuality += 5; // Small bonus for related fields
+    }
+
+    // Research area alignment bonus (0-25 points)
+    if (lab.researchAreas && lab.researchAreas.length > 0) {
+      const researchMatchCount = lab.researchAreas.filter(area =>
+        studentProfile.interests.some(interest =>
+          area.toLowerCase().includes(interest.toLowerCase()) ||
+          interest.toLowerCase().includes(area.toLowerCase())
+        )
+      ).length;
+      matchQuality += researchMatchCount * 8; // 8 points per matching research area
+    }
+
+    // Skills alignment bonus (0-20 points)
+    const skillMatchCount = relevantSkills.filter(skill =>
+      skillsText.includes(skill)
+    ).length;
+    matchQuality += skillMatchCount * 5; // 5 points per matching skill
+
+    // Convert match quality to final score (40-95 range based on quality)
+    // Higher quality = higher score, but with more variation
+    if (matchQuality >= 60) {
+      finalScore = 85 + (matchQuality - 60) * 0.25; // 85-95% for excellent matches
+    } else if (matchQuality >= 40) {
+      finalScore = 70 + (matchQuality - 40) * 0.5; // 70-85% for good matches
+    } else if (matchQuality >= 20) {
+      finalScore = 55 + (matchQuality - 20) * 0.75; // 55-70% for decent matches
+    } else {
+      finalScore = 40 + matchQuality * 0.75; // 40-55% for poor matches
+    }
+
+    finalScore += (Math.random() - 0.5) * 6; // ±3 points randomization
+
+  } else {
+    // No interest matches - varied low scores
+    finalScore = 20 + (Math.random() * 25); // 20-45% for non-matching labs
+  }
+
+  return Math.min(Math.max(Math.round(finalScore), 15), 95);
+}
+
+// Use generated labs if available, otherwise fallback to static data
+let labsData = [];
+try {
+  if (generatedLabs && generatedLabs.length > 0) {
+    const currentProfile = getStudentProfile();
+    labsData = generatedLabs.map(lab => ({
+      ...lab,
+      matchScore: calculateMatchScore(lab, currentProfile)
+    }));
+  } else {
+    labsData = fallbackLabs;
+  }
+} catch (error) {
+  console.warn('Failed to load generated labs, using fallback data:', error);
+  labsData = fallbackLabs;
+}
+
+// Function to recalculate match scores based on current student profile
+export const recalculateMatchScores = () => {
+  const currentProfile = getStudentProfile();
+  labsData = labsData.map(lab => ({
+    ...lab,
+    matchScore: calculateMatchScore(lab, currentProfile)
+  }));
+  // Sort by match score (highest first)
+  labsData.sort((a, b) => b.matchScore - a.matchScore);
+
+  // Save updated scores back to the JSON file
+  if (typeof window === 'undefined') {
+    const fs = require('fs');
+    const path = require('path');
+    const filePath = path.join(__dirname, 'labs.generated.json');
+    try {
+      fs.writeFileSync(filePath, JSON.stringify(labsData, null, 2));
+      console.log('Updated match scores saved to labs.generated.json');
+    } catch (error) {
+      console.error('Failed to save updated scores:', error);
+    }
+  }
+
+  return labsData;
+};
+
+// Sort by match score (highest first)
+labsData.sort((a, b) => b.matchScore - a.matchScore);
+
+export { labsData as labs };

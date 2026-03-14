@@ -1,0 +1,842 @@
+[
+  {
+    "id": "lab_506117276_17",
+    "name": "Carole Parent Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Yali Dou",
+    "piEmail": "yali.dou@umich.edu",
+    "description": "We seek to understand how cells detect and respond to external chemotactic signals to shed light on inflammation and cancer metastasis.",
+    "researchAreas": [
+      "Genomics",
+      "Machine Learning",
+      "Personalized Medicine"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 95,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/parent-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2025929672_1",
+    "name": "Data Mining and Machine Learning Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Faculty in the Computer Science and Engineering (CSE) Division are affiliated with at least one of CSE’s six labs. Lab affiliations are intended to foster collegial peer relations and to create fertile ground for the discussion of shared interests. Labs are also the mechanism by which many visitors from other institutions are hosted at CSE.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Mining",
+      "Big Data"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 94,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/labs-centers/",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1115097610_1",
+    "name": "Wireless Communications Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "Research lab at the University of Michigan.",
+    "researchAreas": [
+      "Robotics",
+      "Computer Vision",
+      "Sensor Fusion"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 94,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/labs-centers/",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1115097610_0",
+    "name": "Integrated Circuits and Systems Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Mingyan Liu",
+    "piEmail": "mingyan.liu@umich.edu",
+    "description": "Research lab at the University of Michigan.",
+    "researchAreas": [
+      "Embedded Systems",
+      "Robotics",
+      "Real-time Systems"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "C++ programming experience",
+      "ROS (Robot Operating System) knowledge",
+      "Control systems background",
+      "Linear algebra and calculus"
+    ],
+    "timeCommitment": "15-25 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 93,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/labs-centers/",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1060513398_14",
+    "name": "Shyamal Mosalaganti Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Arianna Rathbun",
+    "piEmail": "arianna.rathbun@umich.edu",
+    "description": "We use advanced microscopy to understand how multi-protein cellular complexes perform their functions within the context of the cell environment — and how these functions contribute to health and disease.",
+    "researchAreas": [
+      "Medical Imaging",
+      "Computer Vision",
+      "Diagnostic Tools"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 92,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/mosalaganti-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2025929672_3",
+    "name": "Computer Vision and Robotics Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Jason Mars",
+    "piEmail": "jason.mars@umich.edu",
+    "description": "Faculty in the Computer Science and Engineering (CSE) Division are affiliated with at least one of CSE’s six labs. Lab affiliations are intended to foster collegial peer relations and to create fertile ground for the discussion of shared interests. Labs are also the mechanism by which many visitors from other institutions are hosted at CSE.",
+    "researchAreas": [
+      "Robotics",
+      "Autonomous Systems",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 91,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/labs-centers/",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_801300693_0",
+    "name": "Molecular Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Larsen",
+    "piEmail": "scott.larsen@umich.edu",
+    "description": "Research lab at the University of Michigan.",
+    "researchAreas": [
+      "Medical Imaging",
+      "Computer Vision",
+      "Diagnostic Tools"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 91,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1629816064_2",
+    "name": "Radiation Laboratory (RADLAB)",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "The nation’s premier lab in applied electromagnetics: radar, wireless, antennas, remote sensing, and RF circuits. Featuring state-of-the-art facilities and world-class academics.",
+    "researchAreas": [
+      "Computer Vision",
+      "Machine Learning",
+      "Hardware"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Circuit analysis experience",
+      "MATLAB or Python programming",
+      "Electrical engineering fundamentals",
+      "Laboratory experience"
+    ],
+    "timeCommitment": "14-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 90,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "http://radlab.engin.umich.edu/",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1115097610_3",
+    "name": "Power Electronics Lab",
+    "department": "Electrical & Computer Engineering",
+    "pi": "Dr. Heath Hofmann",
+    "piEmail": "heath.hofmann@umich.edu",
+    "description": "Research lab at the University of Michigan.",
+    "researchAreas": [
+      "Machine Learning",
+      "Circuit Design",
+      "Hardware Acceleration"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Circuit analysis experience",
+      "MATLAB or Python programming",
+      "Electrical engineering fundamentals",
+      "Laboratory experience"
+    ],
+    "timeCommitment": "14-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 89,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ece.engin.umich.edu/research/labs-centers/",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_934219306_16",
+    "name": "Melanie Ohi Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "We use single particle cryo-electron microscopy — in combination with biophysical, biochemical, and genetic approaches — to structurally and functionally characterize molecular machines that affect human health.",
+    "researchAreas": [
+      "Microscopy",
+      "Image Analysis",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 88,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/m-ohi-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_841376057_10",
+    "name": "Biochemistry Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Larsen",
+    "piEmail": "scott.larsen@umich.edu",
+    "description": "We develop tools that track and tailor cell lineages to answer important questions about brain development, neuronal evolution and neural regeneration.",
+    "researchAreas": [
+      "Computational Biology",
+      "Machine Learning",
+      "Genomics"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 88,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/t-lee-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1466138345_12",
+    "name": "Jiandie Lin Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "We investigate the mechanisms that regulate nutrient and energy metabolism, and how they become reprogrammed in obesity and metabolic diseases.",
+    "researchAreas": [
+      "Microscopy",
+      "Image Analysis",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 88,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/lin-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1763210134_0",
+    "name": "Be your own mod: U-M researchers introduce framework for custom content moderation",
+    "department": "AI",
+    "pi": "Dr. Qiaozhu Mei",
+    "piEmail": "qiaozhu.mei@umich.edu",
+    "description": "A new browser extension designed by CSE researchers allows users to transform social media content instead of suppressing or removing it according to their own preferences.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Science",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 87,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://ai.engin.umich.edu/stories/be-your-own-mod-u-m-researchers-introduce-framework-for-custom-content-moderation",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1645679792_2",
+    "name": "Jay Brito Querido Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "We use single-particle cryo-electron microscopy in combination with biochemical approaches to study how messenger RNA translation is regulated in human health and disease.",
+    "researchAreas": [
+      "Neuroscience",
+      "Brain Imaging",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 87,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/brito-querido-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1787479284_8",
+    "name": "Daniel Klionsky Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "We investigate how cells respond to stress conditions through autophagy, and the broader implications for human physiology and disease — including in cancer and neurodegenerative disorders.",
+    "researchAreas": [
+      "Microscopy",
+      "Image Analysis",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 86,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/klionsky-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_73866205_4",
+    "name": "Neuroscience Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "We investigate how the central nervous system regulates energy storage, and the role of these neural circuits in obesity, disease cachexia, and anorexia nervosa.",
+    "researchAreas": [
+      "Neuroscience",
+      "Brain Imaging",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 86,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/cone-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1952826998_5",
+    "name": "Herman Fung lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Kenichi Yokoyama",
+    "piEmail": "kenichi.yokoyama@umich.edu",
+    "description": "We use structural and cell biology approaches to study the spatial organization of chromatin and how its dynamic structure underlies organismal development.",
+    "researchAreas": [
+      "Genomics",
+      "Machine Learning",
+      "Personalized Medicine"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 85,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/herman-fung-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_801300693_1",
+    "name": "Cell Biology Research Group",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Larsen",
+    "piEmail": "scott.larsen@umich.edu",
+    "description": "Research lab at the University of Michigan.",
+    "researchAreas": [
+      "Medical Imaging",
+      "Computer Vision",
+      "Diagnostic Tools"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 85,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2025929672_0",
+    "name": "Advanced Computer Systems Lab",
+    "department": "Computer Science & Engineering",
+    "pi": "Dr. Barzan Mozafari",
+    "piEmail": "barzan.mozafari@umich.edu",
+    "description": "Faculty in the Computer Science and Engineering (CSE) Division are affiliated with at least one of CSE’s six labs. Lab affiliations are intended to foster collegial peer relations and to create fertile ground for the discussion of shared interests. Labs are also the mechanism by which many visitors from other institutions are hosted at CSE.",
+    "researchAreas": [
+      "Machine Learning",
+      "Data Mining",
+      "Big Data"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Python programming experience",
+      "Machine learning coursework or experience",
+      "Familiarity with PyTorch/TensorFlow",
+      "Strong mathematical background"
+    ],
+    "timeCommitment": "12-18 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 83,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://cse.engin.umich.edu/research/labs-centers/",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_2137539609_3",
+    "name": "Michael Cianfrocco Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "We investigate the molecular details that determine how, where and when motor proteins transport intracellular cargo to better understand their role in human health and disease.",
+    "researchAreas": [
+      "Microscopy",
+      "Image Analysis",
+      "Computer Vision"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 82,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/cianfrocco-lab",
+    "openPositions": 2,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_603360329_11",
+    "name": "Genomics and Bioinformatics Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "We investigate the neural mechanisms and pathways that orchestrate breathing — and their deviations in breathing disorders.",
+    "researchAreas": [
+      "Computational Biology",
+      "Machine Learning",
+      "Genomics"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 82,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/li-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_594926514_7",
+    "name": "Developmental Biology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "We investigate the function and regulation of the mTOR signaling pathway to better understand its role in diabetes, aging and cancer.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 20,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/inoki-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1588966638_9",
+    "name": "Cheng-Yu Lee Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Arianna Rathbun",
+    "piEmail": "arianna.rathbun@umich.edu",
+    "description": "We study the mechanisms of neural stem cell self-renewal and differentiation, which have implications for neurological disorders and cancer.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 20,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/lee-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_849226846_18",
+    "name": "David Sherman Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Larsen",
+    "piEmail": "scott.larsen@umich.edu",
+    "description": "We harness the power of chemistry that has evolved inside of microorganisms to pioneer new antibiotics, anti-cancer drugs and other medicines.",
+    "researchAreas": [
+      "Bioinformatics",
+      "Data Analysis",
+      "Systems Biology"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 20,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/sherman-lab",
+    "openPositions": 1,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_969517609_6",
+    "name": "David Ginsburg Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "We study the molecular genetics of blood clotting and the structure, function and cellular production of blood-clotting and other proteins.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 20,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/ginsburg-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_289239049_19",
+    "name": "Janet Smith Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Larsen",
+    "piEmail": "scott.larsen@umich.edu",
+    "description": "We strive to illuminate biological functions at the molecular level through the discovery and analysis of three-dimensional structures of proteins.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 20,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/smith-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_849367758_13",
+    "name": "Immunology Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "We use the tools of synthetic organic chemistry, biochemistry, and molecular biology to better understand how genes are regulated.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": true,
+    "matchScore": 20,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/mapp-lab",
+    "openPositions": 4,
+    "postedDate": "2026-03-14"
+  },
+  {
+    "id": "lab_1200290294_15",
+    "name": "Alison Narayan Lab",
+    "department": "Life Sciences Institute",
+    "pi": "Dr. Scott Rothbart",
+    "piEmail": "scott.rothbart@umich.edu",
+    "description": "We harness the powerful reactivity and selectivity of chemistry that exists in nature — and develop new tools and approaches for creating biologically interesting and beneficial molecules.",
+    "researchAreas": [
+      "Drug Discovery",
+      "Computational Chemistry",
+      "AI"
+    ],
+    "requirements": [
+      "Strong academic record (GPA 3.0+)",
+      "Research experience preferred",
+      "Biology coursework background",
+      "Laboratory experience",
+      "Data analysis skills (R/Python)",
+      "Scientific writing ability"
+    ],
+    "timeCommitment": "15-20 hours/week",
+    "credit": true,
+    "paid": false,
+    "matchScore": 20,
+    "image": "/lab-images/default-lab.jpg",
+    "location": "University of Michigan",
+    "website": "https://www.lsi.umich.edu/science/our-labs/narayan-lab",
+    "openPositions": 3,
+    "postedDate": "2026-03-14"
+  }
+]
