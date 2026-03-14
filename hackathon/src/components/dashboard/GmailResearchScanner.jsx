@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Mail, Search, LoaderCircle, Link as LinkIcon, CalendarClock } from 'lucide-react';
 
 const GMAIL_QUERY = 'newer_than:365d (research OR study OR participant OR experiment) (paid OR compensation OR stipend OR "gift card" OR incentive OR honorarium)';
@@ -7,6 +7,8 @@ const DETAIL_BATCH_SIZE = 5;
 const BATCH_PAUSE_MS = 200;
 const MAX_RETRIES = 4;
 const GOOGLE_SCRIPT_ID = 'google-identity-services';
+const STORAGE_STUDIES_KEY = 'research_rabbit_scanner_studies';
+const STORAGE_TOKEN_KEY = 'research_rabbit_scanner_token';
 
 const RESEARCH_KEYWORDS = ['research', 'study', 'participant', 'experiment', 'survey', 'lab', 'recruiting', 'trial'];
 const STRONG_RESEARCH_KEYWORDS = ['research study', 'research participation', 'participant recruitment', 'human subjects', 'irb', 'principal investigator'];
@@ -32,6 +34,8 @@ const GmailResearchScanner = ({ onMarkSignedUp }) => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [searchText, setSearchText] = useState('');
   const [pendingConfirmationStudy, setPendingConfirmationStudy] = useState(null);
+  const tokenClientRef = useRef(null);
+  const shouldScanAfterAuthRef = useRef(false);
 
   const filters = ['all', 'engineering', 'robotics', 'hci', 'remote'];
 
@@ -50,6 +54,20 @@ const GmailResearchScanner = ({ onMarkSignedUp }) => {
         scope: 'https://www.googleapis.com/auth/gmail.readonly',
         callback: async (response) => {
           if (response.error) {
+            if (
+              (response.error === 'interaction_required' || response.error === 'consent_required') &&
+              !shouldScanAfterAuthRef.current
+            ) {
+              return;
+            }
+            if (
+              (response.error === 'interaction_required' || response.error === 'consent_required') &&
+              tokenClientRef.current &&
+              shouldScanAfterAuthRef.current
+            ) {
+              tokenClientRef.current.requestAccessToken({ prompt: 'consent' });
+              return;
+            }
             setError(`Google auth failed: ${response.error}`);
             setIsScanning(false);
             return;
@@ -57,11 +75,17 @@ const GmailResearchScanner = ({ onMarkSignedUp }) => {
 
           const token = response.access_token;
           setAccessToken(token);
-          await runScan(token);
+          persistToken(token, response.expires_in);
+
+          if (shouldScanAfterAuthRef.current) {
+            shouldScanAfterAuthRef.current = false;
+            await runScan(token);
+          }
         }
       });
 
       setTokenClient(instance);
+      tokenClientRef.current = instance;
       setAuthReady(true);
     };
 
@@ -80,6 +104,24 @@ const GmailResearchScanner = ({ onMarkSignedUp }) => {
     script.onerror = () => setError('Failed to load Google Identity script.');
     document.body.appendChild(script);
   }, [clientId]);
+
+  useEffect(() => {
+    const savedStudies = readSavedStudies();
+    if (savedStudies.length) {
+      setStudies(savedStudies);
+    }
+
+    const savedToken = readSavedToken();
+    if (savedToken) {
+      setAccessToken(savedToken);
+    }
+  }, []);
+
+  // Removed auto-prompt on mount. User must click "Connect Gmail" to sign in.
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_STUDIES_KEY, JSON.stringify(studies));
+  }, [studies]);
 
   const filteredStudies = studies.filter((study) => {
     const matchesFilter = activeFilter === 'all' || study.tags.includes(activeFilter);
@@ -107,7 +149,14 @@ const GmailResearchScanner = ({ onMarkSignedUp }) => {
     setIsScanning(true);
     setProgress(10);
     setScanStatus('Requesting Gmail permission...');
-    tokenClient.requestAccessToken({ prompt: accessToken ? '' : 'consent' });
+
+    if (accessToken) {
+      runScan(accessToken);
+      return;
+    }
+
+    shouldScanAfterAuthRef.current = true;
+    tokenClient.requestAccessToken({ prompt: '' });
   };
 
   const runScan = async (token) => {
@@ -156,7 +205,13 @@ const GmailResearchScanner = ({ onMarkSignedUp }) => {
       setStudies(freshStudies);
       setProgress(100);
       setScanStatus(`Done. Found ${freshStudies.length} opportunities.`);
-    } catch (scanError) {
+  } catch (scanError) {
+      if (String(scanError.message || '').includes('401')) {
+        clearSavedToken();
+        setAccessToken('');
+        setError('Session expired. Click Rescan Inbox to sign in again.');
+        return;
+      }
       setError(scanError.message || 'Unable to scan Gmail right now.');
     } finally {
       setIsScanning(false);
@@ -196,7 +251,7 @@ const GmailResearchScanner = ({ onMarkSignedUp }) => {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#00274C] text-white text-sm font-medium disabled:opacity-60 disabled:cursor-not-allowed hover:bg-[#001a36] transition-colors"
         >
           <Mail className="w-4 h-4" />
-          {isScanning ? 'Scanning...' : 'Connect Gmail'}
+          {isScanning ? 'Scanning...' : accessToken ? 'Rescan Inbox' : 'Connect Gmail'}
         </button>
       </div>
 
@@ -405,6 +460,45 @@ async function gmailGet(url, token) {
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function readSavedStudies() {
+  try {
+    const raw = localStorage.getItem(STORAGE_STUDIES_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function persistToken(token, expiresInSeconds) {
+  const ttlMs = (Number(expiresInSeconds) || 3600) * 1000;
+  const payload = {
+    token,
+    expiresAt: Date.now() + ttlMs - 30000
+  };
+  localStorage.setItem(STORAGE_TOKEN_KEY, JSON.stringify(payload));
+}
+
+function readSavedToken() {
+  try {
+    const raw = localStorage.getItem(STORAGE_TOKEN_KEY);
+    if (!raw) return '';
+    const payload = JSON.parse(raw);
+    if (!payload?.token || !payload?.expiresAt || payload.expiresAt <= Date.now()) {
+      localStorage.removeItem(STORAGE_TOKEN_KEY);
+      return '';
+    }
+    return payload.token;
+  } catch {
+    return '';
+  }
+}
+
+function clearSavedToken() {
+  localStorage.removeItem(STORAGE_TOKEN_KEY);
 }
 
 function parseMessageToStudy(email, id) {

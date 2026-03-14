@@ -1,4 +1,3 @@
-
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: var(--font-sans); }
@@ -8,13 +7,16 @@
   .header p { font-size: 14px; color: var(--color-text-secondary); margin-top: 4px; }
   .connect-banner { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 2rem; text-align: center; margin-bottom: 1.5rem; }
   .connect-banner h2 { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 8px; }
-  .connect-banner p { font-size: 14px; color: var(--color-text-secondary); margin-bottom: 1.25rem; max-width: 420px; margin-left: auto; margin-right: auto; }
+  .connect-banner p { font-size: 14px; color: var(--color-text-secondary); margin-bottom: 1.25rem; max-width: 480px; margin-left: auto; margin-right: auto; }
   .btn-google { display: inline-flex; align-items: center; gap: 10px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); padding: 10px 20px; font-size: 14px; font-weight: 500; cursor: pointer; color: var(--color-text-primary); transition: background 0.15s; }
   .btn-google:hover { background: var(--color-background-secondary); }
+  .btn-google:disabled { opacity: 0.6; cursor: not-allowed; }
   .btn-google svg { width: 18px; height: 18px; flex-shrink: 0; }
+  .config-note { margin-top: 12px; font-size: 12px; color: #BA7517; }
+  .error-note { margin-top: 12px; font-size: 12px; color: #B02A37; }
   .scanning { display: none; background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 2rem; text-align: center; margin-bottom: 1.5rem; }
   .scanning p { font-size: 14px; color: var(--color-text-secondary); margin-top: 8px; }
-  .progress-bar { width: 200px; height: 4px; background: var(--color-border-tertiary); border-radius: 2px; margin: 12px auto 0; overflow: hidden; }
+  .progress-bar { width: 240px; height: 4px; background: var(--color-border-tertiary); border-radius: 2px; margin: 12px auto 0; overflow: hidden; }
   .progress-fill { height: 100%; width: 0%; background: #378ADD; border-radius: 2px; transition: width 0.3s; }
   .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 1.5rem; }
   .stat-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem; }
@@ -45,13 +47,13 @@
 <div class="app">
   <div class="header">
     <h1>UMich Research Opportunities</h1>
-    <p>Paid studies and research participation — pulled from your inbox</p>
+    <p>Paid studies and research participation, pulled from your inbox</p>
   </div>
 
   <div class="connect-banner" id="connectBanner">
     <h2>Connect your UMich Gmail</h2>
-    <p>We'll scan your inbox for paid research study emails and organize them in one place. No emails are stored — everything stays in your account.</p>
-    <button class="btn-google" onclick="startScan()">
+    <p>We scan your inbox for paid research study emails and organize them in one place. Data stays in your browser session.</p>
+    <button class="btn-google" onclick="startScan()" id="connectBtn">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
         <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -60,6 +62,8 @@
       </svg>
       Connect Google Account
     </button>
+    <div class="config-note" id="configNote"></div>
+    <div class="error-note" id="errorNote"></div>
   </div>
 
   <div class="scanning" id="scanningBanner">
@@ -88,163 +92,322 @@
   </div>
 </div>
 
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 <script>
-const SAMPLE_STUDIES = [
-  {
-    id: 1,
-    title: "Robotic Arm Interaction User Study",
-    lab: "ROAHM Lab — Prof. Vasudevan",
-    department: "Robotics / EECS",
-    compensation: "$30 Amazon gift card",
-    compensationValue: 30,
-    time: "60 min",
-    format: "In-person",
-    deadline: "Mar 28, 2026",
-    eligibility: "UMich students 18+",
-    description: "Evaluating human interaction with robotic arm motion planning. No experience required.",
-    signupUrl: "#",
-    tags: ["robotics", "engineering", "in-person"],
-    closingSoon: true
-  },
-  {
-    id: 2,
-    title: "Wearable Exoskeleton Feedback Study",
-    lab: "Neurobionics Lab — Prof. Elliott",
-    department: "Mechanical Engineering",
-    compensation: "$25 gift card",
-    compensationValue: 25,
-    time: "45 min",
-    format: "In-person",
-    deadline: "Apr 5, 2026",
-    eligibility: "UMich undergrad/grad students",
-    description: "Testing sensory feedback mechanisms in lower-limb prosthetic devices.",
-    signupUrl: "#",
-    tags: ["robotics", "engineering", "wearables"],
-    closingSoon: false
-  },
-  {
-    id: 3,
-    title: "HCI Study: Coding Assistant Interfaces",
-    lab: "Computer Science & Engineering",
-    department: "EECS",
-    compensation: "$20 Venmo",
-    compensationValue: 20,
-    time: "30 min",
-    format: "Remote",
-    deadline: "Apr 12, 2026",
-    eligibility: "CS/EECS students with coding experience",
-    description: "Comparing usability of AI coding assistants. Conducted over Zoom.",
-    signupUrl: "#",
-    tags: ["hci", "engineering", "remote"],
-    closingSoon: false
-  },
-  {
-    id: 4,
-    title: "Autonomous Vehicle Perception Survey",
-    lab: "Ford Motor Company & UMich MCity",
-    department: "Engineering / Transportation",
-    compensation: "$15 gift card",
-    compensationValue: 15,
-    time: "20 min",
-    format: "Remote",
-    deadline: "Mar 22, 2026",
-    eligibility: "Any UMich student",
-    description: "Online survey about trust and perception of autonomous vehicles. Takes 20 minutes.",
-    signupUrl: "#",
-    tags: ["engineering", "remote", "survey"],
-    closingSoon: true
-  },
-  {
-    id: 5,
-    title: "Human-Robot Collaboration Task Study",
-    lab: "Robot Studio Lab — Prof. Alves-Oliveira",
-    department: "Robotics / EECS",
-    compensation: "$40 Amazon gift card",
-    compensationValue: 40,
-    time: "90 min",
-    format: "In-person",
-    deadline: "Apr 18, 2026",
-    eligibility: "UMich students, no robotics experience needed",
-    description: "Study on how people naturally collaborate with social robots on creative tasks.",
-    signupUrl: "#",
-    tags: ["robotics", "hci", "engineering"],
-    closingSoon: false
-  },
-  {
-    id: 6,
-    title: "EECS Senior Design Usability Test",
-    lab: "EECS 481 — Software Engineering",
-    department: "EECS",
-    compensation: "$10 coffee gift card",
-    compensationValue: 10,
-    time: "25 min",
-    format: "Remote",
-    deadline: "Mar 30, 2026",
-    eligibility: "Any UMich student",
-    description: "Testing a student-built app for course planning. Quick Zoom session.",
-    signupUrl: "#",
-    tags: ["hci", "engineering", "remote"],
-    closingSoon: true
-  }
-];
+const GMAIL_CONFIG = {
+  clientId: 'REPLACE_WITH_GOOGLE_OAUTH_CLIENT_ID',
+  scopes: 'https://www.googleapis.com/auth/gmail.readonly',
+  maxMessages: 40,
+  query: 'newer_than:365d ("paid study" OR "paid research" OR stipend OR compensation OR "gift card" OR "research opportunity" OR "participant needed")'
+};
 
-let activeFilter = 'all';
+const RESEARCH_KEYWORDS = ['research', 'study', 'participant', 'experiment', 'survey', 'lab', 'recruiting', 'trial'];
+const PAID_KEYWORDS = ['paid', 'compensation', 'stipend', 'gift card', 'earn', 'venmo', 'cash', 'incentive', 'paid research', 'paid study'];
+const SIGNUP_HINTS = ['signup', 'sign up', 'register', 'qualtrics', 'google forms', 'forms.gle', 'apply', 'schedule'];
+
+let tokenClient;
+let accessToken = null;
 let studies = [];
+let activeFilter = 'all';
+let scanPercent = 0;
+
+initAuthUI();
+
+function initAuthUI() {
+  const hasClientId = GMAIL_CONFIG.clientId && !GMAIL_CONFIG.clientId.includes('REPLACE_WITH');
+  if (!hasClientId) {
+    document.getElementById('configNote').textContent = 'Add your Google OAuth client ID in GMAIL_CONFIG.clientId first.';
+  }
+
+  const startInit = () => {
+    if (!window.google || !window.google.accounts || !window.google.accounts.oauth2) {
+      setTimeout(startInit, 150);
+      return;
+    }
+
+    tokenClient = google.accounts.oauth2.initTokenClient({
+      client_id: GMAIL_CONFIG.clientId,
+      scope: GMAIL_CONFIG.scopes,
+      callback: async (response) => {
+        if (response.error) {
+          handleScanError('Google auth failed: ' + response.error);
+          return;
+        }
+        accessToken = response.access_token;
+        await runEmailScan();
+      }
+    });
+  };
+
+  startInit();
+}
 
 function startScan() {
-  document.getElementById('connectBanner').style.display = 'none';
-  document.getElementById('scanningBanner').style.display = 'block';
+  clearError();
 
-  const statuses = [
-    "Searching for research opportunity emails...",
-    "Found emails matching 'paid study'...",
-    "Extracting study details with AI...",
-    "Parsing compensation and deadlines...",
-    "Building your dashboard..."
-  ];
-  let i = 0;
-  const fill = document.getElementById('progressFill');
-  const status = document.getElementById('scanStatus');
+  if (!tokenClient) {
+    setError('Google auth is still loading. Try again in a second.');
+    return;
+  }
 
-  const interval = setInterval(() => {
-    if (i < statuses.length) {
-      status.textContent = statuses[i];
-      fill.style.width = ((i + 1) / statuses.length * 100) + '%';
-      i++;
-    } else {
-      clearInterval(interval);
-      setTimeout(showDashboard, 400);
+  if (!GMAIL_CONFIG.clientId || GMAIL_CONFIG.clientId.includes('REPLACE_WITH')) {
+    setError('Set GMAIL_CONFIG.clientId before connecting Gmail.');
+    return;
+  }
+
+  document.getElementById('connectBtn').disabled = true;
+  showScanningState('Requesting Gmail permission...');
+  tokenClient.requestAccessToken({ prompt: accessToken ? '' : 'consent' });
+}
+
+async function runEmailScan() {
+  try {
+    showScanningState('Finding likely research opportunity emails...');
+    setProgress(20);
+
+    const messages = await gmailGet(
+      `https://gmail.googleapis.com/gmail/v1/users/me/messages?q=${encodeURIComponent(GMAIL_CONFIG.query)}&maxResults=${GMAIL_CONFIG.maxMessages}`
+    );
+    const ids = (messages.messages || []).map((m) => m.id);
+
+    if (!ids.length) {
+      studies = [];
+      showDashboard();
+      return;
     }
-  }, 600);
+
+    showScanningState('Reading matching email content...');
+    setProgress(45);
+
+    const details = await Promise.all(ids.map((id) =>
+      gmailGet(`https://gmail.googleapis.com/gmail/v1/users/me/messages/${id}?format=full`)
+    ));
+
+    showScanningState('Extracting compensation, signup links, and deadlines...');
+    setProgress(75);
+
+    studies = details
+      .map((email, idx) => parseMessageToStudy(email, idx + 1))
+      .filter(Boolean);
+
+    setProgress(100);
+    showDashboard();
+  } catch (error) {
+    handleScanError(error.message || 'Unable to scan Gmail right now.');
+  } finally {
+    document.getElementById('connectBtn').disabled = false;
+  }
+}
+
+async function gmailGet(url) {
+  const res = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${accessToken}`
+    }
+  });
+
+  if (!res.ok) {
+    let reason = `HTTP ${res.status}`;
+    try {
+      const body = await res.json();
+      reason = body.error?.message || reason;
+    } catch (_) {}
+    throw new Error('Gmail API error: ' + reason);
+  }
+
+  return res.json();
+}
+
+function parseMessageToStudy(email, id) {
+  const headers = email.payload?.headers || [];
+  const subject = headerValue(headers, 'Subject') || 'Research opportunity';
+  const from = headerValue(headers, 'From') || 'Unknown sender';
+  const date = headerValue(headers, 'Date') || '';
+  const bodyText = extractBodyText(email.payload);
+  const combined = `${subject}\n${email.snippet || ''}\n${bodyText}`;
+
+  const lower = combined.toLowerCase();
+  const hasResearch = containsAny(lower, RESEARCH_KEYWORDS);
+  const hasPaidTerms = containsAny(lower, PAID_KEYWORDS);
+  const compensationInfo = extractCompensation(combined);
+  const links = extractLinks(combined);
+  const signupUrl = links.find((url) => hasSignupHint(url.toLowerCase())) || links[0] || '#';
+  const hasSignup = signupUrl !== '#';
+
+  if (!hasResearch || (!hasPaidTerms && !compensationInfo.label && !hasSignup)) {
+    return null;
+  }
+
+  const format = inferFormat(lower);
+  const tags = inferTags(lower, format);
+  const duration = extractDuration(combined);
+  const deadline = extractDeadline(combined) || 'Not listed';
+
+  return {
+    id,
+    title: subject,
+    lab: from,
+    department: 'From Gmail',
+    compensation: compensationInfo.label || 'Compensation not listed',
+    compensationValue: compensationInfo.value,
+    time: duration || 'Varies',
+    format,
+    deadline,
+    eligibility: 'See email details',
+    description: (email.snippet || bodyText || 'Open email for details.').trim().slice(0, 200),
+    signupUrl,
+    tags,
+    closingSoon: deadlineIsSoon(deadline)
+  };
+}
+
+function headerValue(headers, name) {
+  const found = headers.find((h) => h.name?.toLowerCase() === name.toLowerCase());
+  return found ? found.value : '';
+}
+
+function extractBodyText(payload) {
+  if (!payload) return '';
+
+  if (payload.parts && payload.parts.length) {
+    return payload.parts.map((part) => extractBodyText(part)).join('\n');
+  }
+
+  if (!payload.body?.data) return '';
+
+  try {
+    return decodeBase64Url(payload.body.data);
+  } catch (_) {
+    return '';
+  }
+}
+
+function decodeBase64Url(value) {
+  const normalized = value.replace(/-/g, '+').replace(/_/g, '/');
+  const padded = normalized + '='.repeat((4 - normalized.length % 4) % 4);
+  return atob(padded);
+}
+
+function containsAny(text, words) {
+  return words.some((word) => text.includes(word));
+}
+
+function extractCompensation(text) {
+  const moneyMatches = text.match(/\$\s?\d+(?:\.\d{1,2})?/g) || [];
+  const values = moneyMatches
+    .map((raw) => Number(raw.replace(/[^\d.]/g, '')))
+    .filter((n) => Number.isFinite(n));
+
+  if (!values.length) return { label: '', value: 0 };
+
+  const maxValue = Math.max(...values);
+  return {
+    label: `$${maxValue} (detected from email)`,
+    value: maxValue
+  };
+}
+
+function extractLinks(text) {
+  return [...new Set((text.match(/https?:\/\/[^\s"'<>]+/g) || []).map((url) => url.replace(/[).,]$/, '')))].slice(0, 8);
+}
+
+function hasSignupHint(urlText) {
+  return SIGNUP_HINTS.some((hint) => urlText.includes(hint));
+}
+
+function inferFormat(text) {
+  if (text.includes('zoom') || text.includes('remote') || text.includes('online')) return 'Remote';
+  if (text.includes('in-person') || text.includes('on campus') || text.includes('north campus')) return 'In-person';
+  return 'Unknown';
+}
+
+function inferTags(text, format) {
+  const tags = [];
+  if (format === 'Remote') tags.push('remote');
+  if (text.includes('robot') || text.includes('robotics')) tags.push('robotics');
+  if (text.includes('hci') || text.includes('usability')) tags.push('hci');
+  if (text.includes('engineering') || text.includes('eecs')) tags.push('engineering');
+  if (!tags.includes('engineering')) tags.push('engineering');
+  return tags;
+}
+
+function extractDuration(text) {
+  const m = text.match(/\b(\d{1,3})\s?(min|mins|minute|minutes|hour|hours)\b/i);
+  if (!m) return '';
+  return `${m[1]} ${m[2].toLowerCase()}`;
+}
+
+function extractDeadline(text) {
+  const patterns = [
+    /deadline[:\s]+([A-Za-z]{3,9}\s+\d{1,2}(?:,\s*\d{4})?)/i,
+    /by\s+([A-Za-z]{3,9}\s+\d{1,2}(?:,\s*\d{4})?)/i,
+    /before\s+([A-Za-z]{3,9}\s+\d{1,2}(?:,\s*\d{4})?)/i
+  ];
+
+  for (const pattern of patterns) {
+    const m = text.match(pattern);
+    if (m && m[1]) return m[1].trim();
+  }
+
+  return '';
+}
+
+function deadlineIsSoon(deadlineText) {
+  const parsed = Date.parse(deadlineText);
+  if (!parsed) return false;
+  const now = Date.now();
+  const diffDays = (parsed - now) / (1000 * 60 * 60 * 24);
+  return diffDays >= 0 && diffDays <= 7;
+}
+
+function showScanningState(statusText) {
+  document.getElementById('connectBanner').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('scanningBanner').style.display = 'block';
+  document.getElementById('scanStatus').textContent = statusText;
+}
+
+function setProgress(value) {
+  scanPercent = value;
+  document.getElementById('progressFill').style.width = `${scanPercent}%`;
 }
 
 function showDashboard() {
   document.getElementById('scanningBanner').style.display = 'none';
   document.getElementById('dashboard').style.display = 'block';
-  studies = SAMPLE_STUDIES;
   updateStats();
   renderCards(studies);
 }
 
-function updateStats() {
-  document.getElementById('statTotal').textContent = studies.length;
-  const earnings = studies.reduce((s, x) => s + x.compensationValue, 0);
-  document.getElementById('statEarnings').textContent = '$' + earnings;
-  document.getElementById('statSoon').textContent = studies.filter(s => s.closingSoon).length;
+function handleScanError(message) {
+  document.getElementById('scanningBanner').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('connectBanner').style.display = 'block';
+  setError(message);
 }
 
-function setFilter(f, el) {
-  activeFilter = f;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
+function updateStats() {
+  document.getElementById('statTotal').textContent = studies.length;
+  const earnings = studies.reduce((sum, item) => sum + (item.compensationValue || 0), 0);
+  document.getElementById('statEarnings').textContent = '$' + earnings;
+  document.getElementById('statSoon').textContent = studies.filter((s) => s.closingSoon).length;
+}
+
+function setFilter(filter, btn) {
+  activeFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
+  btn.classList.add('active');
   filterCards();
 }
 
 function filterCards() {
   const q = document.getElementById('searchInput').value.toLowerCase();
-  const filtered = studies.filter(s => {
-    const matchFilter = activeFilter === 'all' || s.tags.includes(activeFilter);
-    const matchSearch = !q || s.title.toLowerCase().includes(q) || s.lab.toLowerCase().includes(q) || s.tags.some(t => t.includes(q));
+  const filtered = studies.filter((study) => {
+    const matchFilter = activeFilter === 'all' || study.tags.includes(activeFilter);
+    const matchSearch = !q ||
+      study.title.toLowerCase().includes(q) ||
+      study.lab.toLowerCase().includes(q) ||
+      study.tags.some((t) => t.includes(q));
     return matchFilter && matchSearch;
   });
   renderCards(filtered);
@@ -252,28 +415,30 @@ function filterCards() {
 
 function renderCards(list) {
   const container = document.getElementById('cardsContainer');
+
   if (!list.length) {
-    container.innerHTML = '<div class="empty">No studies match your filters.</div>';
+    container.innerHTML = '<div class="empty">No paid research opportunities matched your inbox scan. Try broadening your Gmail query.</div>';
     return;
   }
-  container.innerHTML = list.map(s => `
+
+  container.innerHTML = list.map((s) => `
     <div class="study-card">
       <div class="card-top">
         <div>
-          <div class="card-title">${s.title}</div>
-          <div class="card-lab">${s.lab}</div>
+          <div class="card-title">${escapeHtml(s.title)}</div>
+          <div class="card-lab">${escapeHtml(s.lab)}</div>
         </div>
-        <span class="compensation">${s.compensation}</span>
+        <span class="compensation">${escapeHtml(s.compensation)}</span>
       </div>
       <div class="card-meta">
-        <span class="meta-item">⏱ ${s.time}</span>
-        <span class="meta-item">${s.format === 'Remote' ? '💻' : '📍'} ${s.format}</span>
-        <span class="meta-item">📅 Deadline: ${s.deadline}${s.closingSoon ? ' <span style="color:#BA7517;font-weight:500;">· Closing soon</span>' : ''}</span>
+        <span class="meta-item">⏱ ${escapeHtml(s.time)}</span>
+        <span class="meta-item">${s.format === 'Remote' ? '💻' : '📍'} ${escapeHtml(s.format)}</span>
+        <span class="meta-item">📅 Deadline: ${escapeHtml(s.deadline)}${s.closingSoon ? ' <span style="color:#BA7517;font-weight:500;">· Closing soon</span>' : ''}</span>
       </div>
-      <p style="font-size:13px;color:var(--color-text-secondary);margin-top:8px;line-height:1.5;">${s.description}</p>
-      <div class="tags">${s.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+      <p style="font-size:13px;color:var(--color-text-secondary);margin-top:8px;line-height:1.5;">${escapeHtml(s.description)}</p>
+      <div class="tags">${s.tags.map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>
       <div class="card-actions">
-        <button class="btn-primary" onclick="signUp('${s.signupUrl}')">Sign up</button>
+        <button class="btn-primary" onclick="signUp('${escapeHtmlAttr(s.signupUrl)}')">Open signup</button>
         <button class="btn-secondary" onclick="saveStudy(${s.id})">Save</button>
       </div>
     </div>
@@ -281,11 +446,45 @@ function renderCards(list) {
 }
 
 function signUp(url) {
-  sendPrompt('Help me prepare for signing up for a research study at UMich — what should I know before participating?');
+  if (!url || url === '#') {
+    alert('No signup link found in this email. Open Gmail to inspect the full message.');
+    return;
+  }
+  window.open(url, '_blank', 'noopener,noreferrer');
 }
 
 function saveStudy(id) {
-  const s = studies.find(x => x.id === id);
-  sendPrompt(`I want to save the study "${s.title}" — can you remind me about it and its deadline of ${s.deadline}?`);
+  const study = studies.find((item) => item.id === id);
+  if (!study) return;
+
+  const key = 'saved_umich_studies';
+  const existing = JSON.parse(localStorage.getItem(key) || '[]');
+  if (!existing.some((item) => item.id === study.id && item.title === study.title)) {
+    existing.push(study);
+    localStorage.setItem(key, JSON.stringify(existing));
+  }
+
+  alert(`Saved: ${study.title}`);
+}
+
+function setError(message) {
+  document.getElementById('errorNote').textContent = message;
+}
+
+function clearError() {
+  document.getElementById('errorNote').textContent = '';
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function escapeHtmlAttr(value) {
+  return escapeHtml(value).replace(/`/g, '&#096;');
 }
 </script>
