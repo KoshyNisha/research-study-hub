@@ -1,14 +1,48 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FlaskConical, Clock, CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
 import PageWrapper from '../components/layout/PageWrapper';
 import ApplicationRow from '../components/dashboard/ApplicationRow';
 import ProfileCompleteness from '../components/dashboard/ProfileCompleteness';
+import GmailResearchScanner from '../components/dashboard/GmailResearchScanner';
 import Button from '../components/ui/Button';
-import { applications } from '../data/applications';
+import { applications as seedApplications } from '../data/applications';
 import { labs } from '../data/labs';
 
 const Dashboard = () => {
+  const [applications, setApplications] = useState(seedApplications);
+
+  const handleMarkSignedUp = (study) => {
+    if (!study) return;
+
+    setApplications((prev) => {
+      const alreadyExists = prev.some((app) =>
+        app.labName === study.title &&
+        app.piName === study.lab
+      );
+
+      if (alreadyExists) {
+        return prev;
+      }
+
+      const today = new Date().toISOString().slice(0, 10);
+      const newApplication = {
+        id: `app_gmail_${Date.now()}`,
+        labId: null,
+        labName: study.title,
+        piName: study.lab,
+        status: 'Sent',
+        dateSubmitted: today,
+        lastUpdated: today,
+        messagePreview: study.description || 'Applied through external signup form.',
+        responseMessage: null,
+        sourceUrl: study.signupUrl || null
+      };
+
+      return [newApplication, ...prev];
+    });
+  };
+
   const statusCounts = {
     Draft: applications.filter(a => a.status === 'Draft').length,
     Sent: applications.filter(a => a.status === 'Sent').length,
@@ -16,7 +50,7 @@ const Dashboard = () => {
     Responded: applications.filter(a => a.status === 'Responded').length
   };
 
-  const recentLabs = labs.slice(0, 3);
+  const recentLabs = useMemo(() => labs.slice(0, 3), []);
 
   return (
     <PageWrapper>
@@ -78,6 +112,8 @@ const Dashboard = () => {
                 )}
               </div>
             </div>
+
+            <GmailResearchScanner onMarkSignedUp={handleMarkSignedUp} />
 
             {/* Recommended Labs */}
             <div>

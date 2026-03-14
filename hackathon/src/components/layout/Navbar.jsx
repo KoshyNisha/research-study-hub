@@ -23,7 +23,7 @@ const Navbar = () => {
               <div className="w-8 h-8 bg-[#00274C] rounded-lg flex items-center justify-center">
                 <FlaskConical className="w-5 h-5 text-[#FFCB05]" />
               </div>
-              <span className="text-xl font-bold text-[#00274C]">LabBridge</span>
+              <span className="text-xl font-bold text-[#00274C]">Research Rabbit</span>
             </Link>
           </div>
 

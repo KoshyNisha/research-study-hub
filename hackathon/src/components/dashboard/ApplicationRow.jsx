@@ -1,13 +1,20 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronRight, MessageSquare, Calendar } from 'lucide-react';
+import { ChevronRight, MessageSquare, Calendar, ExternalLink } from 'lucide-react';
 import StatusBadge from './StatusBadge';
 
 const ApplicationRow = ({ application }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/lab/${application.labId}`);
+    if (application.sourceUrl) {
+      window.open(application.sourceUrl, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    if (application.labId) {
+      navigate(`/lab/${application.labId}`);
+    }
   };
 
   const formatDate = (dateString) => {
@@ -19,10 +26,14 @@ const ApplicationRow = ({ application }) => {
     });
   };
 
+  const isClickable = Boolean(application.sourceUrl || application.labId);
+
   return (
     <div
       onClick={handleClick}
-      className="group flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl hover:border-[#00274C] hover:shadow-md transition-all cursor-pointer"
+      className={`group flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl transition-all ${
+        isClickable ? 'hover:border-[#00274C] hover:shadow-md cursor-pointer' : ''
+      }`}
     >
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-3">
@@ -45,10 +56,18 @@ const ApplicationRow = ({ application }) => {
               <span className="truncate max-w-xs">{application.responseMessage}</span>
             </div>
           )}
+          {application.sourceUrl && (
+            <div className="flex items-center gap-1 text-[#00274C]">
+              <ExternalLink className="w-4 h-4" />
+              <span>Open signup link</span>
+            </div>
+          )}
         </div>
       </div>
 
-      <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#00274C] transition-colors" />
+      {isClickable && (
+        <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-[#00274C] transition-colors" />
+      )}
     </div>
   );
 };

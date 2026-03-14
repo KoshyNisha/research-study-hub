@@ -54,7 +54,7 @@ const Landing = () => {
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              LabBridge connects University of Michigan students with research labs.
+              Research Rabbit connects University of Michigan students with research labs.
               Discover opportunities, apply with personalized emails, and track your applications — all in one place.
             </p>
 
@@ -98,7 +98,7 @@ const Landing = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-[#00274C] mb-4">How LabBridge Works</h2>
+            <h2 className="text-3xl font-bold text-[#00274C] mb-4">How Research Rabbit Works</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Getting involved in research has never been easier. Three simple steps to your next research opportunity.
             </p>
@@ -179,7 +179,7 @@ const Landing = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to start your research journey?</h2>
           <p className="text-gray-300 mb-8 text-lg">
-            Join hundreds of Michigan students who have found their perfect research match through LabBridge.
+            Join hundreds of Michigan students who have found their perfect research match through Research Rabbit.
           </p>
           <Link to="/discover">
             <Button size="lg" variant="maize" className="flex items-center gap-2 mx-auto">
